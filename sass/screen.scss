@@ -1,0 +1,1731 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+@import "heading-paragraph";
+$orange: #ffac55;
+$white: #ffffff;
+$blue: #03b6e7;
+$green: #16d428;
+$grey: #838b8c;
+$grey-heading: #343a3b;
+
+.container{
+  max-width: 1140px;
+}
+#the-header{
+  .for-header-contacts{
+    background-color: #262829;
+  }
+  .header-contacts{
+    font: 400 .525rem/1.2rem Montserrat;
+    text-transform: uppercase;
+    & a{
+      color: inherit;
+      text-decoration: inherit;
+    }
+    & dd{
+      display: inline-block;
+      border-right: 1px solid $white;
+      padding: 1%;
+      &:last-child{
+        border: none;
+      }
+    }
+    & .header-contact-name{
+      color: $white;
+      display: inline-block;
+    }
+    & .header-email{
+      color: #727779;
+      &:hover{
+        color: #727779 * 1.8;
+      }
+    }
+    & .header-phone{
+      color: #a2a5a6;
+      &:hover{
+        color: #a2a5a6 * 1.4;
+      }
+    }
+  }
+}
+#navigator{
+  .a-navbar{
+    background: none;
+    border: none;
+    box-shadow: none;
+    font: 400 1rem/2.142rem Montserrat;
+    margin-bottom: 0;
+    padding-bottom: 20px;
+    .for-right-navbar{
+      text-transform: uppercase;
+    }
+  }
+  .brand-holder{
+    padding: 30px 15px;
+  }
+  .nav-button{
+    margin-top: 40px;
+    background-color: white;
+  }
+  .custom-navbar-collapse{
+    border: none;
+  }
+  .for-right-navbar{
+    padding: 30px 0 0 0 ;
+  }
+  .for-right-links{
+    color: #4e4e4e;
+    text-align: center;
+    & a{
+      text-decoration: none;
+      &:hover{
+        color: $orange;
+      }
+      &:active{
+        color: $orange;
+      }
+    }
+  }
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  background: none;
+  box-shadow: none;
+  color: $orange;
+}
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+  background: none;
+  box-shadow: none;
+  color: $orange;
+}
+.slider-background{
+  background: rgba( 0, 0, 0, 0) url("../img/slider-bg.png") center/cover no-repeat;
+  width: 100%;
+  height: 80vh;
+}
+.carousel-control.left, .carousel-control.right{
+  width: 10%;
+}
+.menu-holder{
+  position: relative;
+  & .header-menu-section{
+    position: absolute;
+    bottom: 0;
+    & .menu-header{
+      padding: 5%;
+      background-color: $orange;
+      color: $white;
+      font: 400 .65rem/1.5rem Montserrat;
+      text-transform: uppercase;
+      & .making-block{
+        display: inline-block;
+        font: 300 1.2rem/1.6rem Lato;
+      }
+    }
+    & .navigation-menu{
+      -moz-column-count: 2;
+      -webkit-column-count: 2;
+      column-count: 2;
+      font-size: 0;
+      & li{
+        border: 1px solid ($blue * 0.9);
+        border-width: 1px 1px 0 0;
+        &:hover{
+          background-color: $blue * 0.9;
+        }
+        &:first-child{
+          border-width: 0 1px 0 0;
+        }
+        &:nth-child(4){
+          border: none;
+        }
+        &:nth-child(6){
+          border-width: 1px 0 0 0;
+        }
+        &:nth-child(5){
+          border-width: 1px 0 0 0;
+        }
+        & a{
+          text-decoration: none;
+        }
+      }
+      & .industry-link{
+        color: $white;
+        text-transform: uppercase;
+        font: 400 .7rem/1.5rem Montserrat;
+        & .for-menu-ico{
+          float: right;
+          padding-right: 5%;
+        }
+      }
+      & .education{
+        padding: 28% 0 2% 15%;
+        background: $blue url("../img/menu-ico/icon-education.png") 20% 30%/auto no-repeat;
+      }
+      & .technology{
+        padding: 28% 0 2% 15%;
+        background: $blue url("../img/menu-ico/icon-technology.png") 20% 30%/auto no-repeat;
+      }
+      & .banking{
+        padding: 28% 0 2% 15%;
+        background: $blue url("../img/menu-ico/icon-banking.png") 20% 30%/auto no-repeat;
+      }
+      & .business{
+        padding: 28% 0 2% 15%;
+        background: $blue url("../img/menu-ico/icon-business.png") 20% 30%/auto no-repeat;
+      }
+      & .real-estate{
+        padding: 28% 0 2% 15%;
+        background: $blue url("../img/menu-ico/icon-real-estate.png") 20% 30%/auto no-repeat;
+      }
+      & .menu-without-ico{
+        text-align: center;
+        padding: 15%;
+        background-color: $blue;
+        & .view-more{
+          padding: calc(10% - 2px);
+          background-color: #16d428;
+          color: $white;
+          text-transform: uppercase;
+          font: 400 .6rem/1.5rem Montserrat;
+          border: 2px solid $green;
+          border-radius: 25px;
+          &:hover{
+            color: $green;
+            background: none;
+            border-width: 2px;
+          }
+        }
+      }
+    }
+  }
+}
+.article-header{
+  color: $grey * 0.9;
+  font: 400 1rem/1.5rem Montserrat;
+  text-transform: uppercase;
+  & span{
+    color: #343a3b;
+    font: 400 2rem/2rem Montserrat;
+    display: block;
+  }
+}
+#about-section{
+  padding: 7% 0;
+  & .about-article{
+    & .about-header{
+      color: $grey * 0.9;
+      font: 400 1rem/1.5rem Montserrat;
+      text-transform: uppercase;
+      & span{
+        color: #343a3b;
+        font: 400 2rem/2rem Montserrat;
+        display: block;
+      }
+    }
+    & .about-article-paragraph{
+      margin: 3% 0;
+      color: $grey;
+      font: 400 1rem/2rem Domine;
+    }
+    & .link-holder{
+      padding: 0 0 5%;
+      text-align: center;
+    }
+    & .read-more-link{
+      text-decoration: none;
+      padding: 2%;
+      background-color: #16d428;
+      color: $white;
+      text-transform: uppercase;
+      font: 400 1rem/1.5rem Montserrat;
+      border: 1px solid $green;
+      border-radius: 25px;
+      &:hover{
+        color: $green;
+        background: none;
+        border-width: 2px;
+      }
+    }
+  }
+  & .about-img-holder{
+    & .badge-holder{
+      text-align: center;
+      color: $white;
+      background-color: $blue * 1.1;
+      border: 2px solid $white;
+      padding: 20px;
+      width: 92%;
+      margin: 2% auto;
+      box-shadow: 0 10px 5px 2px #d5dbdc;
+      & .years-of-excellence{
+        background: url("../img/badge-icon.png") center 0/40% no-repeat;
+        border: 1px solid $white;
+        text-transform: uppercase;
+        font: 400 .7rem/.7rem Montserrat;
+        padding: 40% 1% 5%;
+        & span{
+          font: 400 3rem/3rem Montserrat;
+          display: block;
+        }
+      }
+    }
+  }
+}
+#steps{
+  background-color: #e7eff1;
+  padding: 7% 0;
+  & .steps-list{
+    & .step-one{
+      background: url("../img/steps/step-1.png.png") 14px 0/auto no-repeat;
+      padding-top: 80px;
+    }
+    & .step-two{
+      background: url("../img/steps/step-2.png.png") 14px 0/auto no-repeat;
+      padding-top: 80px;
+    }
+    & .step-three{
+      background: url("../img/steps/step-3.png.png") 4px 0/auto no-repeat;
+      padding-top: 80px;
+    }
+    & .step-one, .step-two, .step-three{
+      margin: 2% 0 2% 0;
+      & .step-header{
+        margin: 0 0 2%;
+        font: 400 1.1rem/1.3rem Montserrat;
+        color: $green;
+        & span{
+          color: #343a3b;
+          display: block;
+          font: 700 1.05rem/1.4rem Montserrat;
+          text-transform: uppercase;
+        }
+      }
+      & .step-paragraph{
+        color: $grey;
+        font: 400 1rem/1.5rem Domine;
+      }
+    }
+  }
+}
+#projects-section{
+  padding: 7% 0;
+  & .projects{
+    & .projects-list{
+      font-size: 0;
+      & li{
+        font-size: 14px;
+        margin: 15px 0;
+        &:hover .overlay-project{
+          display: block;
+        }
+      }
+      & .project-holder{
+        overflow: hidden;
+        position: relative;
+
+        &:hover .cross-holder{
+          background-color: $orange * 0.8;
+          z-index: 999;
+        }
+        & .project-img{
+
+        }
+        & .tag-span{
+          position: absolute;
+          top: 5%;
+          left: 5%;
+          border: 2px solid $orange;
+          border-radius: 25px;
+          padding: 2% 4%;
+          font: 400 .9rem/1.1rem Montserrat;
+          color: $white;
+        }
+        & .cross-holder{
+          position: absolute;
+          bottom: -20px;
+          left: -30px;
+          width: 70px;
+          height: 50px;
+          z-index: 99;
+          text-align: center;
+          font: 400 1.5rem/1.5rem Montserrat;
+          color: $white;
+          background-color: $blue * 1.1;
+          -ms-transform: rotate(45deg);
+          -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+          & a{
+            color: $white;
+            text-decoration: none;
+            display: block;
+            -ms-transform: rotate(-45deg);
+            -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+          }
+        }
+      }
+    }
+  }
+  & .project-link-holder{
+    margin: 5% 0;
+  }
+  & .full-project-link{
+    text-decoration: none;
+    padding: 1%;
+    background-color: #16d428;
+    color: $white;
+    text-transform: uppercase;
+    font: 400 1rem/1.5rem Montserrat;
+    border: 1px solid $green;
+    border-radius: 25px;
+    &:hover{
+      color: $green;
+      background: none;
+      border-width: 2px;
+    }
+  }
+}
+.overlay-project{
+  overflow: hidden;
+  display: none;
+  position: absolute;
+  background-color: $orange;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  z-index: 99;
+  color: #16d428;
+  & .overlay-text{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+  }
+  & .overlay-header{
+    text-align: center;
+    font: 700 .9rem/1.5rem Montserrat;
+    & a{
+      color: $white;
+      text-decoration: none;
+    }
+  }
+  & .overlay-paragraph{
+    font: 400 .7rem/1.1rem Domine;
+    color: $white;
+  }
+}
+#clients{
+  padding: 7% 0;
+  background-color: $blue;
+  .carousel-holder{
+    margin: 10% 0;
+  }
+  .slides-list{
+    color: $white * 0.95;
+    font: 400 .7rem/1.2rem Domine;
+    & .slide-holder{
+       .client-text{
+         & span{
+           display: block;
+           border: 1px solid $white;
+           width: 3%;
+           margin: 5% 0;
+         }
+       }
+      .left-blockquote{
+        background: url("../img/clients/icon-quote-left.png") 0 0/100% no-repeat;
+        display: inline-block;
+        padding: 4% 0;
+      }
+      .right-blockquote{
+        background: url("../img/clients/icon-quote-right.png") 0 0/100% no-repeat;
+        display: inline-block;
+        padding: 4% 0;
+      }
+    }
+  }
+  .first-indicator-list{
+    & .photo-indicator{
+      cursor: pointer;
+      .img-indicator{
+        float: left;
+      }
+      & figure{
+        opacity: 0.5;
+
+      }
+      .client-text{
+        margin: 15% 0;
+      }
+      .client-name{
+        margin: 15% 0;
+        color: $white;
+        font: 700 .6rem/.6rem Montserrat;
+      }
+      .client-specialization{
+        color: $white * 0.95;
+        font: 400 .6rem/.8rem Domine;
+      }
+    }
+  }
+  .first-indicator-list .active{
+    & figure{
+      opacity: 1;
+    }
+  }
+  .photo-indicator:hover{
+    & figure{
+      opacity: 1;
+    }
+  }
+  .photo-indicator:focus{
+    & figure{
+      opacity: 1;
+    }
+  }
+  .photo-indicator:active{
+    & figure{
+      opacity: 1;
+    }
+  }
+  .white{
+    color: $white  * 0.85;
+    & span{
+      color: $white;
+    }
+  }
+}
+.second-indicator-list{
+  .ico-holder.active, .ico-holder:hover{
+    border-color: $green;
+    & span{
+      background-color: $green;
+      transition: all 0.3s ease-in-out 0s;
+      transform: scale(1);
+    }
+  }
+  .ico-holder{
+    border: 2px solid #fff;
+    border-radius: 50%;
+    float: left;
+    height: 5px;
+    margin-right: 6px;
+    padding: 4px;
+    transition: all 0.5s ease 0s;
+    width: 5px;
+    cursor: pointer;
+    & span{
+      background: #ffffff none repeat scroll 0 0;
+      border-radius: 50%;
+      display: block;
+      height: 3px;
+      transform: scale(0);
+      transition: all 0.5s ease 0s;
+      width: 3px;
+    }
+  }
+}
+#blog-section{
+  padding: 5% 0 75%;
+  background: #e7eff1 url("../img/blog/blog-bg.png") 0 100%/100% no-repeat;
+  & .article-header{
+    color: #343a3b;
+    font: 400 2rem/2rem Montserrat;
+    span{
+      color: $grey * 0.9;
+      font: 400 1rem/1.5rem Montserrat;
+      text-transform: uppercase;
+    }
+  }
+  .blog-article-holder:first-child{
+    .date{
+      color: $green;
+    }
+  }
+  .blog-link-holder{
+    font: 400 .8rem/1.5rem Montserrat;
+    padding: 5% 0;
+    margin: 2% 0;
+    & a{
+      color: #606668;
+      text-decoration: none;
+      border-radius: 25px;
+      padding: 1%;
+      &:hover{
+        border-color: $orange;
+      }
+      &:active{
+        border-color: $orange;
+      }
+      &:focus{
+        border-color: $orange;
+      }
+    }
+    .top-posts{
+      border: 1px solid $orange;
+    }
+    .check-all{
+      border: 1px solid (#606668 * 1.3);
+    }
+  }
+  .blog-article-header{
+    font: 400 1rem/1.3rem Domine;
+    color: #343a3b;
+    &:hover .date{
+      color: $green;
+    }
+    a{
+      color: inherit;
+      text-decoration: none;
+    }
+    .making-block{
+      display: block;
+      font: 700 1.1rem/1.5rem Montserrat;
+      text-transform: uppercase;
+    }
+  }
+  .blog-article-paragraph{
+    margin: 3% 0 5%;
+    color: $grey;
+    font: 400 1rem/1.3rem Domine;
+  }
+}
+#contacts-section{
+  padding: 5% 0;
+  .contacts-list{
+    margin: 5% 0;
+    .contact-holder{
+      margin: 5% 0;
+      .contact-wrapper{
+        color: #343a3b;
+        font: 700 1rem/1.5rem Montserrat;
+        text-transform: uppercase;
+        padding: 10% 0 10% 35%;
+        border: 1px solid $grey;
+        .contact{
+          display: block;
+          color: #343a3b;
+          font: 400 1rem/1.5rem Domine;
+          text-transform: none;
+          text-decoration: none;
+          transition: color 0.5s;
+          -webkit-transition: color 0.5s;
+          &:hover{
+            color: $orange;
+
+          }
+        }
+      }
+    }
+  }
+  .mail{
+    background: url("../img/contacts/icon-email.png") 10% 50%/auto no-repeat;
+  }
+  .call{
+    background: url("../img/contacts/icon-call.png") 10% 50%/auto no-repeat;
+  }
+  .career{
+    background: url("../img/contacts/icon-career.png") 10% 50%/auto no-repeat;
+  }
+}
+#footer-section{
+  padding: 5% 0 0;
+  background-color: #262829;
+  .footer-article-header{
+    margin-bottom: 10% ;
+    color: #e1e1e1;
+    font: 700 1.3rem/2rem Montserrat;
+    text-transform: uppercase;
+  }
+  .news-letter-paragraph{
+    color: $grey;
+    font: 400 1rem/1.2rem Domine;
+    margin-bottom: 10% ;
+  }
+  .subscribe{
+    margin-bottom: 3%;
+  }
+  .mailchimp-holder{
+    border: none;
+  }
+  .email{
+    font: 400 .9rem/1.5rem Montserrat;
+    color: white;
+    padding: 3%;
+    border-radius: 35px;
+    border: none;
+    width: 90%;
+    position: relative;
+    background-color: #323334;
+    outline:none;
+    &::-webkit-input-placeholder {
+      font: 400 .9rem/1.5rem Montserrat;
+      color: #5e5e5e;
+      text-transform: uppercase;
+      padding: 2%;
+    }
+    &::-moz-placeholder {
+      font: 400 .9rem/1.5rem Montserrat;
+      color: #5e5e5e;
+      text-transform: uppercase;
+      padding: 2%;
+    }
+    &:-ms-input-placeholder {
+      font: 400 .9rem/1.5rem Montserrat;
+      color: #5e5e5e;
+      text-transform: uppercase;
+      padding: 2%;
+    }
+    &:-moz-placeholder {
+      font: 400 .9rem/1.5rem Montserrat;
+      color: #5e5e5e;
+      text-transform: uppercase;
+      padding: 2%;
+    }
+  }
+  .button-subscribe{
+    position: absolute;
+    right: 10%;
+    bottom: 0;
+    color: $white;
+    font: 400 1rem/1.5rem Montserrat;
+    text-transform: uppercase;
+    border-radius: 35px;
+    border: 2px solid $green;
+    padding: calc(3% - 2px);
+    background-color: $green;
+    width: 33%;
+    outline:none;
+    transition: all 0.5s ease-in-out 0s;
+    &:hover{
+      border: 2px solid $green;
+      color: $green;
+      background-color: #262829 * 1.1;
+    }
+  }
+  .some-links-list{
+    margin-bottom: 10%;
+  }
+  .some-link{
+    margin: 3% 0;
+    color: $grey;
+    font: 400 .9rem/1.2rem Montserrat;
+    text-transform: uppercase;
+    transition: all 0.5s ease-in-out 0s;
+    &:hover{
+      color: $orange;
+    }
+    a{
+      color: inherit;
+      text-decoration: none;
+    }
+  }
+  .footer{
+    border-bottom: 1px solid #323334;;
+  }
+  .copyright-holder{
+    margin: 2% 0;
+  }
+}
+
+
+              //----------------our blog page------------------------ //
+
+
+.blog-content-wrapper{
+  padding-bottom: 7%;
+  padding-top: 7%;
+
+}
+.active-article{
+  font: 400 1rem/2rem "Domine";
+  color: $grey;
+  border-bottom: 1px solid ($grey * 1.4);
+  .active-article-paragraph{
+    margin: 5% 0;
+  }
+  .unordered-list{
+    margin-left: 5%;
+    .active-article-li{
+      list-style: none;
+      padding-left: 50px;
+      background: url("../img/blog-page/main/tick-icon.png") 0 45% / auto no-repeat;
+    }
+  }
+  .share-list{
+    border: 1px solid ($grey * 1.4);
+    border-radius: 30px;
+    margin-bottom: 7%;
+    &:after{
+      clear: both;
+    }
+    & li{
+      display: inline-block;
+      margin-left: 10px;
+      font: 400 20px/20px;
+      padding: 7px 15px;
+      transition: all 0.5s;
+      &:hover{
+        color: $orange;
+        cursor: pointer;
+      }
+      & .social-links{
+        color: inherit;
+        text-decoration: none;
+      }
+    }
+    & .share-it-link{
+      background-color: $orange;
+      border: 1px solid $orange;
+      border-radius: 50%;
+      color: $white;
+      &:hover{
+       background-color: $white;
+      }
+    }
+  }
+}
+.active-article-photo{
+  padding-right: 0;
+}
+.active-article-header{
+  position: relative;
+  padding-right: 0;
+  margin: 3% 0 5%;
+  .header-content{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    float: none;
+    .header-span{
+      background-color: #000000;
+      font: 700 .7rem/1.4rem 'Montserrat';
+      text-transform: uppercase;
+      color: $white;
+      padding: 2%;
+    }
+    .header-span-paragraph{
+      display: flex;
+    }
+    .date{
+      margin: 0;
+      & a{
+        font: 400 .7rem/1.4rem 'Montserrat';
+        background-color: $orange;
+        color: $white;
+        transition: all 0.5s;
+        text-decoration: none;
+        text-transform: uppercase;
+        padding: 2%;
+        &:hover{
+          background-color: $white;
+          color: $orange;
+        }
+      }
+    }
+  }
+}
+.left-padding{
+  padding-left: 15px;
+}
+.minus-left-padding{
+  padding-left: 0;
+}
+.minus-right-padding{
+  padding-right: 0;
+}
+
+.related-posts{
+  clear: both;
+  padding-top: 5%;
+  padding-bottom: 7%;
+  border-bottom: 1px solid ($grey * 1.4);
+  .related-item{
+    .related-img{
+      margin-bottom: 15px;
+    }
+  }
+}
+.related-header{
+  font: 400 1rem/1.5rem "Montserrat";
+  color: $grey-heading;
+  text-transform: uppercase;
+  a{
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.5s;
+    &:hover{
+      color: $orange;
+    }
+  }
+}
+.date{
+  display: inline-block;
+  font: 400 1rem/1.8rem "Montserrat";
+  color: $orange;
+  text-transform: uppercase;
+  transition: all 0.5s;
+  margin-bottom: 2%;
+  &:hover{
+    color: $green;
+  }
+  a{
+    color: inherit;
+    text-decoration: none;
+  }
+}
+.blog-page-article-header{
+  color: $grey-heading;
+  text-transform: uppercase;
+  font: 700 1.2rem/2.2rem "Montserrat";
+  margin-bottom: 1%;
+  a{
+    color: inherit;
+    text-decoration: none;
+  }
+}
+.visitors-comments{
+  padding-top: 7%;
+  padding-bottom: 7%;
+  font: 400 1rem/2rem "Domine";
+  color: $grey;
+  border-bottom: 1px solid ($grey * 1.4);
+  .custom-media-list{
+    margin-top: 4%;
+  }
+  .custom-media{
+    margin-top: 30px;
+  }
+  .custom-media-body{
+    clear: both;
+  }
+  .reply-btn{
+    float: right;
+    padding: 0 2%;
+    background-color: $green;
+    color: $white;
+    font: 400 1rem/1.6rem "Montserrat";
+    border: 1px solid $green;
+    border-radius: 30px;
+    transition: all 0.5s;
+    cursor: pointer;
+    a{
+      color: inherit;
+    }
+    &:hover{
+      background-color: $white;
+      color: $green;
+    }
+  }
+}
+.blog-aside-content{
+  font: 400 1rem/2rem "Domine";
+  color: $grey;
+}
+.aside-search-form{
+  position: relative;
+  padding-bottom: 5%;
+  padding-right: 15px;
+  .search-header{
+    color: #898e8f;
+    font: 400 1rem/2rem "Montserrat";
+    text-transform: uppercase;
+  }
+  .search-input{
+    outline: none;
+    padding: 2% 2% 2% 5%;
+    color: #b5bdbe;
+    font: 400 15px/28px "Domine";
+    border: 1px solid #b5bdbe;
+    border-radius: 0;
+    width: 100%;
+    position: relative;
+  }
+  .search-submit{
+    padding-right: 15px;
+    background: none;
+    border: none;
+    border-radius: 0;
+    width: 0;
+  }
+  .label-submit{
+    padding-right: 15px;
+    position: absolute;
+    right: 0;
+    transform: translateY(10%);
+    cursor: pointer;
+    color: #4c4e4f;
+    font: 400 16px/33px;
+    text-transform: uppercase;;
+  }
+}
+.aside-categories{
+  padding-top: 7%;
+  padding-bottom: 7%;
+  .categories-list{
+    .categories-item{
+      margin-top: 3%;
+      padding-left: 20px;
+      word-spacing: -0.05rem;
+      letter-spacing: -0.02rem;
+      background: url("../img/blog-page/slice-2.png") 0 45%/auto no-repeat;
+      transition: all 0.5s;
+      &:hover{
+        color: $orange;
+      }
+      a{
+        color: inherit;
+        text-decoration: none;
+      }
+    }
+  }
+}
+.blog-aside-content .related-posts{
+  border: none;
+}
+.tages-list{
+  overflow: hidden;
+}
+.tag-item{
+  float: left;
+  padding: 2% 4%;
+  margin: 2% 0 2% 3%;
+  background-color: $green;
+  color: $white;
+  font: 400 13px/30px "Montserrat";
+  text-transform: uppercase;
+  border: 1px solid $green;
+  border-radius: 30px;
+  transition: all 0.5s;
+  cursor: pointer;
+  a{
+    color: inherit;
+    text-decoration: none;
+  }
+  &:hover{
+    background-color: $white;
+    color: $green;
+  }
+}
+.make-bigger{
+  font: 400 15px/30px "Montserrat";
+}
+.tags-section{
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+.little-monkey{
+  clear: both;
+  padding-bottom: 5%;
+  padding-top: 6%;
+  margin-top: 7%;
+  .little-monkey-form{
+    border: 1px solid #d2dbdd;
+    padding: 5%;
+    input{
+      width: 100%;
+      margin: 2% 0;
+      outline: none;
+      padding: 2% 5%;
+      border: 1px solid #d2dbdd;
+    }
+    .button{
+      margin-bottom: 5%;
+    }
+  }
+  .little-monkey-header{
+    font: 400 14px/28px "Montserrat";
+    color: $grey-heading;
+    text-transform: uppercase;
+    padding: 4% 0;
+    span{
+      font: 700 18px/28px "Montserrat";
+      display: block;
+    }
+  }
+}
+.float-none{
+  float: none;
+}
+.right-padding{
+  padding-right: 15px;
+}
+.leave-message-section{
+  background-color: #e7eff1;
+  padding-bottom: 7%;
+  padding-top: 7%;
+  .form-item{
+    margin-top: 2%;
+  }
+  .massage-input{
+    resize: none;
+    padding: 3% 0;
+  }
+  .c-input{
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #d2dbdd;
+    text-transform: uppercase;
+    background-color: #e7eff1;
+    margin: 2% 0;
+    outline: none;
+    color: #343a3b;
+    font: 400 .8rem/2.1rem "Montserrat";
+  }
+  .submit-input{
+    width: auto;
+    padding: 1% 2%;
+    margin: 0;
+  }
+}
+              // ----------------@medias------------------------------//
+@media screen and (min-width: 767px) {
+  #footer-section {
+    .footer-article-header {
+      font: 700 .89rem/1.5rem Montserrat;
+      .news-letter-paragraph {
+        color: $grey;
+        font: 400 1rem/1.2rem Domine;
+      }
+    }
+    .some-link {
+      margin: 3% 0;
+      font: 400 .8rem/1.2rem Montserrat;
+    }
+  }
+  #contacts-section {
+    .contacts-list {
+      .contact-holder {
+        .contact-wrapper {
+          color: #343a3b;
+          font: 700 .85rem/1.5rem Montserrat;
+          width: 100%;
+          text-transform: uppercase;
+          padding: 10% 0 10% 25%;
+          border: 1px solid $grey;
+          letter-spacing: -.06rem;
+          .contact {
+            display: block;
+            color: #343a3b;
+            font: 400 1rem/1.5rem Domine;
+          }
+        }
+      }
+    }
+    .mail {
+      background: url("../img/contacts/icon-email.png") 5% 50%/15% no-repeat;
+    }
+    .call {
+      background: url("../img/contacts/icon-call.png") 5% 50%/15% no-repeat;
+    }
+    .career {
+      background: url("../img/contacts/icon-career.png") 5% 50%/15% no-repeat;
+    }
+  }
+  .slider-background {
+  }
+  #navigator {
+    .a-navbar {
+      font: 400 .6rem/1.5rem Montserrat;
+    }
+  }
+  #the-header {
+    .header-contacts {
+      font: 400 .8571rem/2rem Montserrat;
+    }
+  }
+  .menu-holder {
+    & .header-menu-section {
+      & .menu-header {
+        font: 400 .55rem/1.3rem Montserrat;
+        text-align: center;
+      }
+      & .navigation-menu {
+        & .industry-link {
+
+          font: 400 .5rem/1.7rem Montserrat;
+          & .for-menu-ico {
+            padding-right: 5%;
+          }
+        }
+        & .menu-without-ico {
+          padding: 15%;
+          & .view-more {
+            font: 400 .5rem/1.7rem Montserrat;
+          }
+        }
+      }
+    }
+  }
+  #about-section {
+    padding: 5% 0;
+    & .about-article {
+      & .link-holder {
+        text-align: right;
+        padding: 0;
+      }
+    }
+    & .about-img-holder {
+      position: relative;
+      & .badge-holder {
+        text-align: center;
+        color: $white;
+        position: absolute;
+        bottom: -148.33%;
+        left: 25%;
+        z-index: 99;
+        background-color: $blue * 1.1;
+        border: 3px solid $white;
+        padding: 18px;
+        width: 50%;
+        & .years-of-excellence {
+          background: url("../img/badge-icon.png") center 0/70% no-repeat;
+          border: 1px solid $white;
+          text-transform: uppercase;
+          font: 400 .9rem/1.3rem Montserrat;
+          padding: 90% 1% 5%;
+          & span {
+            font: 400 3rem/3rem Montserrat;
+            display: block;
+          }
+        }
+      }
+    }
+  }
+  #projects-section {
+    padding: 7% 0;
+    & .projects {
+      & .projects-list {
+        font-size: 0;
+        & li {
+          font-size: 14px;
+          margin: 15px 0;
+        }
+        & .project-holder {
+          overflow: hidden;
+          position: relative;
+          &:hover .overlay-project {
+            display: block;
+          }
+          &:hover .cross-holder {
+            background-color: $orange * 0.8;
+            z-index: 999;
+          }
+          & .project-img {
+
+          }
+          & .tag-span {
+            position: absolute;
+            top: 5%;
+            left: 5%;
+            border: 2px solid $orange;
+            border-radius: 25px;
+            padding: 2% 4%;
+            font: 400 .9rem/1.1rem Montserrat;
+            color: $white;
+          }
+          & .cross-holder {
+            position: absolute;
+            bottom: -20px;
+            left: -30px;
+            width: 70px;
+            height: 50px;
+            z-index: 99;
+            text-align: center;
+            font: 400 1.5rem/1.5rem Montserrat;
+            color: $white;
+            background-color: $blue * 1.1;
+            -ms-transform: rotate(45deg);
+            -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+            & a {
+              color: $white;
+              text-decoration: none;
+              display: block;
+              -ms-transform: rotate(-45deg);
+              -webkit-transform: rotate(-45deg);
+              transform: rotate(-45deg);
+            }
+          }
+        }
+      }
+    }
+  }
+  .overlay-project {
+    overflow: hidden;
+    display: none;
+    position: absolute;
+    background-color: $orange;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    z-index: 99;
+    color: #16d428;
+    & .overlay-text {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+    }
+    & .overlay-header {
+      text-align: center;
+      font: 700 1.1rem/1.5rem Montserrat;
+      .projects-list li:nth-child(2) & {
+        font: 700 0.7rem/1rem Montserrat;
+      }
+      .projects-list li:nth-child(3) & {
+        font: 700 0.7rem/1rem Montserrat;
+      }
+      & a {
+        color: $white;
+        text-decoration: none;
+      }
+    }
+    & .overlay-paragraph {
+      font: 400 .8rem/1.1rem Domine;
+      color: $white;
+      .projects-list li:nth-child(2) & {
+        font: 400 .6rem/1.1rem Domine;
+      }
+      .projects-list li:nth-child(3) & {
+        font: 400 .6rem/1.1rem Domine;
+      }
+    }
+  }
+  #clients {
+    .slides-list {
+      font: 400 1rem/1.5rem Domine;
+    }
+    .first-indicator-list {
+      & .photo-indicator {
+
+        .client-text {
+          margin: 10% 0;
+        }
+        .client-name {
+          margin: 0;
+          font: 700 1rem/1.6rem Montserrat;
+        }
+        .client-specialization {
+          font: 400 1rem/1.6rem Domine;
+        }
+      }
+    }
+    .second-indicator-list {
+      .ico-holder {
+        height: 15px;
+        margin-right: 6px;
+        padding: 4px;
+        width: 15px;
+      }
+    }
+  }
+  #blog-section{
+    padding: 5% 0;
+    background: #e7eff1 url("../img/blog/blog-bg.png") 100% 0/50% 100%  no-repeat;
+    .blog-link-holder{
+      font: 400 .8rem/1.5rem Montserrat;
+      padding: 5% 0;
+      margin: 2% 0;
+    }
+    .blog-article-header{
+      font: 400 1rem/1.3rem Domine;
+      .making-block{
+        display: block;
+        font: 700 1.1rem/1.5rem Montserrat;
+      }
+    }
+    .blog-article-paragraph{
+      margin: 3% 0 5%;
+      font: 400 1rem/1.3rem Domine;
+    }
+  }
+
+  //----------------our blog page------------------------ //
+  .active-article{
+    .unordered-list{
+      margin-left: 10%;
+    }
+    .share-list {
+      float: right;
+    }
+  }
+
+  .active-article-header{
+    .header-content{
+      .header-span{
+        font: 700 .9rem/1.7rem 'Montserat';
+      }
+      .date{
+        & a{
+          font: 400 .9rem/1.7rem 'Montserat';
+        }
+      }
+    }
+  }
+
+
+}
+@media screen and (min-width: 991px) {
+    .slider-background {
+      height: 100vh;
+    }
+    #the-header {
+      .header-contacts {
+        font: 400 1rem/2rem Montserrat;
+      }
+    }
+    #navigator {
+      .a-navbar {
+        font: 400 1rem/1.5rem Montserrat;
+      }
+    }
+    .menu-holder {
+      & .header-menu-section {
+        & .menu-header {
+          font: 400 .9rem/1.8rem Montserrat;
+        }
+        & .navigation-menu {
+          & .industry-link {
+            font: 400 .8rem/1.5rem Montserrat;
+            & .for-menu-ico {
+              padding-right: 10%;
+            }
+          }
+          & .menu-without-ico {
+            padding: 15%;
+            & .view-more {
+              font: 400 .8rem/1.5rem Montserrat;
+            }
+          }
+        }
+      }
+    }
+    #about-section {
+      padding: 5% 0;
+      & .about-article {
+        & .link-holder {
+          text-align: right;
+          padding: 0;
+        }
+      }
+      & .about-img-holder {
+        position: relative;
+        & .badge-holder {
+          text-align: center;
+          color: $white;
+          position: absolute;
+          bottom: -100.33%;
+          left: 25%;
+          z-index: 99;
+          background-color: $blue * 1.1;
+          border: 3px solid $white;
+          padding: 18px;
+          width: 50%;
+          & .years-of-excellence {
+            background: url("../img/badge-icon.png") center 0/70% no-repeat;
+            border: 1px solid $white;
+            text-transform: uppercase;
+            font: 400 .9rem/1.3rem Montserrat;
+            padding: 70% 1% 5%;
+            & span {
+              font: 400 3rem/3rem Montserrat;
+              display: block;
+            }
+          }
+        }
+      }
+    }
+    #projects-section {
+      padding: 7% 0;
+      & .projects {
+        & .projects-list {
+          font-size: 0;
+          & li {
+            font-size: 14px;
+            margin: 15px 0;
+          }
+          & .project-holder {
+            overflow: hidden;
+            position: relative;
+            &:hover .overlay-project {
+              display: block;
+            }
+            &:hover .cross-holder {
+              background-color: $orange * 0.8;
+              z-index: 999;
+            }
+            & .project-img {
+
+            }
+            & .tag-span {
+              position: absolute;
+              top: 5%;
+              left: 5%;
+              border: 2px solid $orange;
+              border-radius: 25px;
+              padding: 2% 4%;
+              font: 400 .9rem/1.1rem Montserrat;
+              color: $white;
+            }
+            & .cross-holder {
+              position: absolute;
+              bottom: -20px;
+              left: -30px;
+              width: 70px;
+              height: 50px;
+              z-index: 99;
+              text-align: center;
+              font: 400 1.5rem/1.5rem Montserrat;
+              color: $white;
+              background-color: $blue * 1.1;
+              -ms-transform: rotate(45deg);
+              -webkit-transform: rotate(45deg);
+              transform: rotate(45deg);
+              & a {
+                color: $white;
+                text-decoration: none;
+                display: block;
+                -ms-transform: rotate(-45deg);
+                -webkit-transform: rotate(-45deg);
+                transform: rotate(-45deg);
+              }
+            }
+          }
+        }
+      }
+    }
+    .overlay-project {
+      & .overlay-header {
+        font: 700 1.3rem/1.9rem Montserrat;
+        .projects-list li:nth-child(2) & {
+          font: 700 1rem/1.4rem Montserrat;
+        }
+        .projects-list li:nth-child(3) & {
+          font: 700 1rem/1.4rem Montserrat;
+        }
+      }
+      & .overlay-paragraph {
+        font: 400 1rem/1.5rem Domine;
+        .projects-list li:nth-child(2) & {
+          font: 400 .8rem/1.3rem Domine;
+        }
+        .projects-list li:nth-child(3) & {
+          font: 400 .8rem/1.3rem Domine;
+        }
+      }
+    }
+    #clients {
+      .slides-list {
+        font: 400 1rem/1.5rem Domine;
+      }
+      .first-indicator-list {
+        & .photo-indicator {
+          .img-indicator{
+            margin: 0 2% 0;
+          }
+          float: left;
+          .client-text {
+            margin: 10% 0;
+          }
+          .client-name {
+            margin: 0;
+            font: 700 .8rem/1.4rem Montserrat;
+          }
+          .client-specialization {
+            font: 400 .8rem/1.4rem Domine;
+          }
+        }
+      }
+      .second-indicator-list {
+
+        .ico-holder {
+          margin-top: 25%;
+          height: 15px;
+          margin-right: 6px;
+          padding: 4px;
+          width: 15px;
+        }
+      }
+    }
+  #blog-section{
+    padding: 5% 0;
+    background: #e7eff1 url("../img/blog/blog-bg.png") 100% 0/50% 100%  no-repeat;
+    .blog-link-holder{
+      float: right;
+      width: 50%;
+      font: 400 1rem/1.7rem Montserrat;
+      padding: 0;
+      margin:0 0 2% 0;
+    }
+    .blog-article-header{
+
+      font: 400 1.2rem/1.5rem Domine;
+      .making-block{
+        display: block;
+        font: 700 1.3rem/1.7rem Montserrat;
+      }
+    }
+    .blog-article-paragraph{
+      margin: 3% 0 5%;
+      font: 400 1.2rem/1.5rem Domine;
+    }
+  }
+  #footer-section{
+    .some-links-list{
+      margin-top: 35%;
+    }
+  }
+  #footer-section {
+    .footer-article-header {
+      font: 700 1.4rem/2rem Montserrat;
+      .news-letter-paragraph {
+        color: $grey;
+        font: 400 1.1rem/1.5rem Domine;
+      }
+    }
+    .some-link {
+      margin: 3% 0;
+      font: 400 1rem/1.6rem Montserrat;
+      letter-spacing: -.06rem;
+    }
+  }
+  #contacts-section {
+    .contacts-list {
+      .contact-holder {
+        .contact-wrapper {
+          color: #343a3b;
+          font: 700 1.2rem/1.5rem Montserrat;
+          padding: 10% 0 10% 35%;
+          border: 1px solid $grey;
+          letter-spacing: -.06rem;
+          .contact {
+            display: block;
+            color: #343a3b;
+            font: 400 1rem/1.5rem Domine;
+          }
+        }
+      }
+    }
+    .mail {
+      background: url("../img/contacts/icon-email.png") 10% 50%/auto no-repeat;
+    }
+    .call {
+      background: url("../img/contacts/icon-call.png") 10% 50%/auto no-repeat;
+    }
+    .career {
+      background: url("../img/contacts/icon-career.png") 10% 50%/auto no-repeat;
+    }
+  }
+
+  //----------------our blog page------------------------ //
+  .active-article{
+    .illustration-paragraph{
+      padding-top: 2%;
+      padding-bottom: 5%;
+    }
+  }
+
+  .active-article-header{
+    .header-content{
+      .header-span{
+        font: 700 1rem/2rem 'Montserat';
+      }
+      .date{
+        & a{
+          font: 400 1rem/2rem 'Montserat';
+        }
+      }
+    }
+  }
+
+}
+  @media screen and (min-width: 1199px) {
+    #about-section {
+      & .about-img-holder {
+        & .badge-holder {
+          bottom: -80%;
+        }
+      }
+    }
+    .overlay-project {
+      & .overlay-header {
+        font: 700 1.6rem/2.1rem Montserrat;
+        .projects-list li:nth-child(2) & {
+          font: 700 1.3rem/1.8rem Montserrat;
+        }
+        .projects-list li:nth-child(3) & {
+          font: 700 1.3rem/1.8rem Montserrat;
+        }
+      }
+      & .overlay-paragraph {
+        font: 400 1.3rem/1.8rem Domine;
+        .projects-list li:nth-child(2) & {
+          font: 400 1.1rem/1.6rem Domine;
+        }
+        .projects-list li:nth-child(3) & {
+          font: 400 1.1rem/1.6rem Domine;
+        }
+      }
+    }
+    #clients {
+      .slides-list {
+        font: 400 1.2rem/1.7rem Domine;
+      }
+      .first-indicator-list {
+        & .photo-indicator {
+          .img-indicator{
+            margin: 0 3% 0;
+          }
+          float: left;
+          .client-text {
+            margin: 10% 0;
+          }
+          .client-name {
+            margin: 0;
+            font: 700 1.1rem/1.6rem Montserrat;
+          }
+          .client-specialization {
+            font: 400 1.1rem/1.6rem Domine;
+          }
+        }
+      }
+      .second-indicator-list {
+        .ico-holder {
+          height: 15px;
+          margin-right: 6px;
+          padding: 4px;
+          width: 15px;
+        }
+      }
+    }
+
+    //----------------our blog page------------------------ //
+
+    .active-article-header{
+      .header-content{
+        .header-span{
+          font: 700 1rem/2rem 'Montserat';
+        }
+        .date{
+          & a{
+            font: 400 1rem/2rem 'Montserat';
+          }
+        }
+      }
+    }
+
+  }
+

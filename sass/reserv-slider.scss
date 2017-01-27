@@ -1,0 +1,63 @@
+.carousel-holder{
+  position: static;
+  margin: 5% 0;
+}
+.slides-list{
+  position: static;
+  color: $white * 0.95;
+  font: 400 1rem/1.5rem Domine;
+  & .slide-holder{
+    position: static;
+    .client-text{
+      & span{
+        display: block;
+        border: 1px solid $white;
+        width: 3%;
+        margin: 5% 0;
+      }
+    }
+    .left-blockquote{
+      background: url("../img/clients/icon-quote-left.png") 0 0/100% no-repeat;
+      display: inline-block;
+      padding: 4% 0;
+    }
+    .right-blockquote{
+      background: url("../img/clients/icon-quote-right.png") 0 0/100% no-repeat;
+      display: inline-block;
+      padding: 4% 0;
+    }
+  }
+}
+.first-indicator-list{
+  text-align: left;
+  position: static;
+  width: auto;
+  margin: inherit;
+  & .photo-indicator{
+    display: inline-block;
+    width: auto;
+    height: auto;
+    margin: 0 -10px;
+    padding: 0 15px;
+    text-indent: 0;
+    cursor: pointer;
+    border: none;
+    background: none;
+    border-radius: 0;
+    & .img-indicator{
+      opacity: 0.5;
+      &:hover{
+        opacity: 1;
+      }
+      &:active{
+        opacity: 1;
+      }
+      &:focus{
+        opacity: 1;
+      }
+    }
+  }
+}
+.second-indicator-list{
+  position: static;
+}

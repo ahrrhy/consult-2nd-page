@@ -1,0 +1,33 @@
+$orange: #ffac55;
+$white: #ffffff;
+$blue: #03b6e7;
+$green: #16d428;
+$grey: #838b8c;
+
+.heading-section{
+  padding-top: 7%;
+  padding-bottom: 7%;
+  background: #e6eff1 url("../img/blog-page/blog-heading-bg.jpg") center/cover no-repeat;
+  z-index: 1;
+  .heading-paragraph{
+    text-transform: uppercase;
+    font: 300 2.1rem/2rem "Lato";
+    padding-left: 5%;
+    position: relative;
+    z-index: 30;
+    &::before{
+      content: "";
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background-color: $orange;
+      position: absolute;
+      z-index: -1;
+      bottom: 0;
+      transform: translate(-33%, 20%);
+      -ms-transform: translate(-33%, 20%); /* IE 9 */
+      -webkit-transform: translate(-33%, 20%); /* Chrome, Safari, Opera */
+    }
+  }
+}
+
