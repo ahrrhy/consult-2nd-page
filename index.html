@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Domine" rel="stylesheet">
-    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/jquery-3.1.1.min.js"></script><!-- Не самая лучшая идея подулючать локально jQuery. Лучше подключать последнюю версию с CDN -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://use.fontawesome.com/64be43e3a3.js"></script>
     <link href="stylesheets/ie.css" media="screen" rel="stylesheet" type="text/css" />
@@ -32,7 +32,7 @@
     <![endif]-->
 </head>
     <body>
-        <header id="the-header" class="container-fluid the-header">
+        <header id="the-header" class="container-fluid the-header"><!-- А почему "the-header" а не просто хедер? -->
             <div class="row for-header-contacts">
                 <dl class="container text-right header-contacts">
                     <dt class="header-contact-name">email <span>:</span></dt>
@@ -44,7 +44,7 @@
             <div id="navigator" class="navigator">
                 <nav class="navbar navbar-default a-navbar">
                     <div class="container">
-                        <!-- Brand and toggle get grouped for better mobile display -->
+                        <!-- Brand and toggle get grouped for better mobile display --><!-- Я понимаю что ты скопировал. Но лишние комменты всетаки стоило бы убирать -->
                         <div class="navbar-header">
                             <button type="button" class="navbar-toggle collapsed nav-button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
                                 <span class="sr-only">Toggle navigation</span>
@@ -68,7 +68,7 @@
                     </div><!-- /.navbar-collapse -->
                 </nav>
             </div>
-            <div id="carousel-example-generic" class="carousel slide menu-holder" data-ride="carousel">
+            <div id="carousel-example-generic" class="carousel slide menu-holder" data-ride="carousel"><!-- Это уже не хедер -->
                 <!-- Wrapper for slides -->
                 <div class="carousel-inner" role="listbox">
                     <div class="item active slider-background">
@@ -84,7 +84,7 @@
                         </div>
                     </div>
                     <div class="container">
-                        <section class="header-menu-section col-sm-4 col-md-4 col-lg-3">
+                        <section class="header-menu-section col-sm-4 col-md-4 col-lg-3"><!-- Если у тебя на 2 размерах экрана блок занимает одинаковое количество колонок - то достаточно написать меньшее расширение, что бы оно работало. В твоем случае вместо col-sm-4 col-md-4 надо было оставить col-sm-4 -->
                             <h1 class="menu-header">We are leading consulting company<span class="making-block">Choose your industry</span></h1>
                             <ul class="navigation-menu">
                                 <li class="education "><a href="#" class="industry-link">Education<span class="for-menu-ico"><i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i></span></a></li>
@@ -120,7 +120,7 @@
                 <p class="link-holder"><a href="#" class="read-more-link">read more</a></p>
             </article>
             <div class=" col-sm-5 about-img-holder">
-                <img src="img/about.png.png" alt="photo" class="img-responsive col-sm-12  about-us-photo">
+                <img src="img/about.png.png" alt="photo" class="img-responsive col-sm-12  about-us-photo"><!-- Кол без рова? -->
                 <div class="badge-holder col-sm-6">
                     <p class="years-of-excellence"><span>25</span>years of excellence</p>
                 </div>
@@ -149,7 +149,7 @@
             <section class="container projects">
                     <h1 class="article-header">Featured<span>Projects</span></h1>
                     <ul class="row projects-list">
-                        <li class=" col-xs-12 col-sm-6">
+                        <li class=" col-xs-12 col-sm-6"><!-- Не делай пробелы перед названием классов -->
                             <div class="project-holder">
                                 <img src="img/projects/img-1.png" alt="project" class="img-responsive project-img ">
                                 <span class="tag-span">Banking</span>
@@ -274,7 +274,7 @@
             <div class="container ">
                 <section class="col-sm-6 blog-holder">
                     <h1 class="row article-header blog-header"><span>news</span>our blog
-                        <span class="blog-link-holder">
+                        <span class="blog-link-holder"><!-- Это не холдер, это враппер :) -->
                             <a href="#" class="top-posts">top posts</a>
                             <a href="#" class="check-all">check all posts</a>
                         </span>
@@ -282,7 +282,7 @@
                     <ul class="row list-of-blog-posts">
                         <li class="blog-article-holder">
                             <article class="blog-article">
-                                <h3 class="blog-article-header">
+                                <h3 class="blog-article-header"><!-- У статьи может быть свой хедер, в которой бы и Н1 было бы норм как назваие -->
                                     <a href="#">February
                                         <span class="date">20, 2016 </span>
                                         <span class="making-block">Blog Heading here Business</span>

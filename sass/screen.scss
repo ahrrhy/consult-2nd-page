@@ -11,7 +11,12 @@ $blue: #03b6e7;
 $green: #16d428;
 $grey: #838b8c;
 $grey-heading: #343a3b;
+$grey-background: #e7eff1;
 
+body{
+  font: 400 1rem/2rem "Domine";
+  color: $grey;
+}
 .container{
   max-width: 1140px;
 }
@@ -41,7 +46,7 @@ $grey-heading: #343a3b;
     & .header-email{
       color: #727779;
       &:hover{
-        color: #727779 * 1.8;
+        color: #727779 * 1.8;/*Хм... интересный подход*/
       }
     }
     & .header-phone{
@@ -51,6 +56,9 @@ $grey-heading: #343a3b;
       }
     }
   }
+}
+.right-padding-plus{
+  padding-right: 50px;
 }
 #navigator{
   .a-navbar{
@@ -69,13 +77,13 @@ $grey-heading: #343a3b;
   }
   .nav-button{
     margin-top: 40px;
-    background-color: white;
+    background-color: white;/*Ты же везде НЕХ используешь. Так и везде используй. */
   }
   .custom-navbar-collapse{
     border: none;
   }
   .for-right-navbar{
-    padding: 30px 0 0 0 ;
+    padding: 30px 0 0 0 ; /*30 0 0 - было бы достаточно*/
   }
   .for-right-links{
     color: #4e4e4e;
@@ -280,7 +288,7 @@ $grey-heading: #343a3b;
   }
 }
 #steps{
-  background-color: #e7eff1;
+  background-color: $grey-background;
   padding: 7% 0;
   & .steps-list{
     & .step-one{
@@ -410,6 +418,8 @@ $grey-heading: #343a3b;
     top: 50%;
     left: 0;
     transform: translateY(-50%);
+    -webkit-transform: translateY(-50%); /* Ch <36, Saf 5.1+, iOS < 9.2, An =<4.4.4 */
+    -ms-transform: translateY(-50%); /* IE 9 */
   }
   & .overlay-header{
     text-align: center;
@@ -537,7 +547,7 @@ $grey-heading: #343a3b;
 }
 #blog-section{
   padding: 5% 0 75%;
-  background: #e7eff1 url("../img/blog/blog-bg.png") 0 100%/100% no-repeat;
+  background: $grey-background url("../img/blog/blog-bg.png") 0 100%/100% no-repeat;
   & .article-header{
     color: #343a3b;
     font: 400 2rem/2rem Montserrat;
@@ -826,7 +836,7 @@ $grey-heading: #343a3b;
         transition: all 0.5s;
         text-decoration: none;
         text-transform: uppercase;
-        padding: 2%;
+        padding: 8%;
         &:hover{
           background-color: $white;
           color: $orange;
@@ -857,7 +867,7 @@ $grey-heading: #343a3b;
   }
 }
 .related-header{
-  font: 400 1rem/1.5rem "Montserrat";
+  font: 700 1rem/1.5rem "Montserrat";
   color: $grey-heading;
   text-transform: uppercase;
   a{
@@ -951,8 +961,8 @@ $grey-heading: #343a3b;
     width: 100%;
     position: relative;
   }
-  .search-submit{
-    padding-right: 15px;
+  .aside-search-submit{
+    padding: 0;
     background: none;
     border: none;
     border-radius: 0;
@@ -960,12 +970,16 @@ $grey-heading: #343a3b;
   }
   .label-submit{
     padding-right: 15px;
+    margin-right: 15px;
     position: absolute;
     right: 0;
+    bottom: 25%;
+    -webkit-transform: translateY(10%); /* Ch <36, Saf 5.1+, iOS < 9.2, An =<4.4.4 */
+    -ms-transform: translateY(10%); /* IE 9 */
     transform: translateY(10%);
     cursor: pointer;
     color: #4c4e4f;
-    font: 400 16px/33px;
+    font: 400 16px/33px "Montserrat";
     text-transform: uppercase;;
   }
 }
@@ -1004,6 +1018,7 @@ $grey-heading: #343a3b;
   color: $white;
   font: 400 13px/30px "Montserrat";
   text-transform: uppercase;
+  text-decoration: none;
   border: 1px solid $green;
   border-radius: 30px;
   transition: all 0.5s;
@@ -1061,9 +1076,9 @@ $grey-heading: #343a3b;
   padding-right: 15px;
 }
 .leave-message-section{
-  background-color: #e7eff1;
-  padding-bottom: 7%;
-  padding-top: 7%;
+  background-color: $grey-background;
+  padding-bottom: 5%;
+  padding-top: 5%;
   .form-item{
     margin-top: 2%;
   }
@@ -1076,7 +1091,7 @@ $grey-heading: #343a3b;
     border: none;
     border-bottom: 1px solid #d2dbdd;
     text-transform: uppercase;
-    background-color: #e7eff1;
+    background-color: $grey-background;
     margin: 2% 0;
     outline: none;
     color: #343a3b;
@@ -1086,9 +1101,166 @@ $grey-heading: #343a3b;
     width: auto;
     padding: 1% 2%;
     margin: 0;
+    outline: none;
   }
 }
-              // ----------------@medias------------------------------//
+
+              //----------about us page------------------------------//
+              //fsdjlnbsojgnvsljkgnsfmjklgsnfgljksfnglsjgnsfjlkmfsgnlj//
+.what-we-do{
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+.excellence-wrapper{
+  background-color: $blue;
+  font: 400 .8rem/2.1rem "Montserrat";
+  color: #ffffff;
+  padding: 30px;
+  box-shadow: 0 2px 5px 5px #d5dbdc;
+  border: 8px solid #ffffff;
+  .reward{
+    border: 1px solid #ffffff;
+    background: url("../img/badge-icon.png") center 0/60% no-repeat;
+    text-transform: uppercase;
+    font: 400 4rem/4rem Montserrat;
+    padding: 70% 1% 5%;
+    & span{
+      font: 400 .8rem/.9rem Montserrat;
+      display: block;
+    }
+  }
+  .happy-clients{
+    margin: 50px 0;
+    text-transform: uppercase;
+    font: 400 3rem/3rem Montserrat;
+    & span{
+      margin-top: 10px;
+      font: 400 .8rem/.9rem Montserrat;
+      display: block;
+    }
+  }
+}
+.core-values{
+  background-color: $grey-background;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+.values-list{
+  margin-top: 7%;
+}
+.satisfaction{
+  margin-top: 2%;
+  padding-top: 70px;
+  background: url("../img/about-page/values/icon-client-satisfaction.png") 0 0/ auto no-repeat;
+}
+.support{
+  margin-top: 2%;
+  padding-top: 70px;
+  background: url("../img/about-page/values/icon-fully-support.png") 0 0/ auto no-repeat;
+}
+.win{
+  margin-top: 2%;
+  padding-top: 70px;
+  background: url("../img/about-page/values/icon-win.png") 0 0/ auto no-repeat;
+}
+.mission-vision{
+  padding-top: 5%;
+  padding-bottom: 5%;
+  article{
+    margin-bottom: 5%;
+    & img{
+      margin: 5% 0;
+    }
+  }
+  .contact-us-btn{
+    padding: 10px 20px;
+    text-decoration: none;
+    float: none;
+  }
+}
+.management {
+  padding-top: 5%;
+  padding-bottom: 5%;
+  border-top: 1px solid #dbe4e4;
+  & .in-center{
+    & .view-team-btn{
+      padding: 10px 20px;
+      float: none;
+      text-decoration: none;
+    }
+  }
+}
+.managers-list{
+  margin: 5% 0;
+  .manager-item{
+    margin-top: 0;
+    padding: 0;
+    &:last-child{
+      padding-right: 15px;
+    }
+    .manager-img{
+      width: 110px;
+      height: 110px;
+    }
+    .media-header{
+      font: 700 1rem/1.2rem "Montserrat";
+      text-transform: uppercase;
+      color: $grey-heading;
+      & span{
+        display: block;
+        font: 400 .95rem/1.5rem "Montserrat";
+        color: $grey * 1.1;
+      }
+      & a{
+        color: inherit;
+        text-decoration: none;
+        transition: all 0.5s;
+        &:hover{
+          color: $orange;
+        }
+      }
+    }
+    .managers-social{
+      margin: 10% 0;
+      border-top: 1px solid #dbe4e4;
+    }
+    .managers-social-item{
+      margin-top: 5%;
+      text-transform: uppercase;
+      font: 400 .6rem/1rem "Montserrat";
+      word-spacing: -0.05rem;
+      letter-spacing: -0.06rem;
+      padding: 0;
+      text-align: center;
+      & a{
+        color: inherit;
+        text-decoration: none;
+        transition: all 0.5s;
+        &:hover{
+          color: $blue;
+        }
+      }
+    }
+    .facebook{
+      color: #3b5998;
+    }
+    .twitter{
+      color: #50abf1;
+      & a:hover{
+        color: $orange;
+      }
+    }
+    .google{
+      color: #dc4b3f;
+    }
+  }
+}
+
+
+
+
+// -----------@medias------------------------------//
+              //fsdjlnbsojgnvsljkgnsfmjklgsnfgljksfnglsjgnsfjlkmfsgnlj//
 @media screen and (min-width: 767px) {
   #footer-section {
     .footer-article-header {
@@ -1278,6 +1450,8 @@ $grey-heading: #343a3b;
       top: 50%;
       left: 0;
       transform: translateY(-50%);
+      -webkit-transform: translateY(-50%); /* Ch <36, Saf 5.1+, iOS < 9.2, An =<4.4.4 */
+      -ms-transform: translateY(-50%); /* IE 9 */
     }
     & .overlay-header {
       text-align: center;
@@ -1334,7 +1508,7 @@ $grey-heading: #343a3b;
   }
   #blog-section{
     padding: 5% 0;
-    background: #e7eff1 url("../img/blog/blog-bg.png") 100% 0/50% 100%  no-repeat;
+    background: $grey-background url("../img/blog/blog-bg.png") 100% 0/50% 100%  no-repeat;
     .blog-link-holder{
       font: 400 .8rem/1.5rem Montserrat;
       padding: 5% 0;
@@ -1376,6 +1550,39 @@ $grey-heading: #343a3b;
     }
   }
 
+  //----------------about us page------------------//
+
+  .managers-list{
+    .manager-item{
+      .managers-social-item{
+        margin-top: 5%;
+        text-transform: uppercase;
+        font: 400 .8rem/1rem "Montserrat";
+        padding: 0;
+        text-align: center;
+        & a{
+          color: inherit;
+          text-decoration: none;
+          transition: all 0.5s;
+          &:hover{
+            color: $blue;
+          }
+        }
+      }
+      .facebook{
+        color: #3b5998;
+      }
+      .twitter{
+        color: #50abf1;
+        & a:hover{
+          color: $orange;
+        }
+      }
+      .google{
+        color: #dc4b3f;
+      }
+    }
+  }
 
 }
 @media screen and (min-width: 991px) {
@@ -1562,7 +1769,7 @@ $grey-heading: #343a3b;
     }
   #blog-section{
     padding: 5% 0;
-    background: #e7eff1 url("../img/blog/blog-bg.png") 100% 0/50% 100%  no-repeat;
+    background: $grey-background url("../img/blog/blog-bg.png") 100% 0/50% 100%  no-repeat;
     .blog-link-holder{
       float: right;
       width: 50%;
@@ -1651,6 +1858,35 @@ $grey-heading: #343a3b;
     }
   }
 
+
+  //----------------about us page------------------//
+
+  .what-we-do{
+    position: relative;
+  }
+  .excellence-wrapper{
+    position: absolute;
+    right: 15px;
+    top: 90px;
+    .reward{
+      background: url("../img/badge-icon.png") center 0/60% no-repeat;
+      padding: 50% 1% 5%;
+      & span{
+        font: 400 .8rem/.9rem Montserrat;
+        display: block;
+      }
+    }
+    .happy-clients{
+      margin: 40px 0;
+      text-transform: uppercase;
+      font: 400 3rem/3rem Montserrat;
+      & span{
+        margin-top: 10px;
+        font: 400 .8rem/.9rem Montserrat;
+        display: block;
+      }
+    }
+  }
 }
   @media screen and (min-width: 1199px) {
     #about-section {
@@ -1727,5 +1963,9 @@ $grey-heading: #343a3b;
       }
     }
 
-  }
+
+    //----------------about us page------------------//
+
+
+}
 
