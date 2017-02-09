@@ -817,18 +817,26 @@ body{
     bottom: 0;
     width: 100%;
     float: none;
+    & a{
+      cursor: pointer;
+    }
     .header-span{
+      color: inherit;
+      text-decoration: none;
       background-color: #000000;
-      font: 700 .7rem/1.4rem 'Montserrat';
-      text-transform: uppercase;
-      color: $white;
-      padding: 2%;
+      padding: 5px;
     }
     .header-span-paragraph{
       display: flex;
+      font: 700 .7rem/1.4rem 'Montserrat';
+      text-transform: uppercase;
+      color: $white;
+      padding: 0;
+      margin: 0;
     }
     .date{
       margin: 0;
+
       & a{
         font: 400 .7rem/1.4rem 'Montserrat';
         background-color: $orange;
@@ -1256,8 +1264,166 @@ body{
   }
 }
 
+//-------------------pages------------------------------//
 
+.blog-article{
+  padding-top: 5%;
+  padding-bottom: 5%;
+  border-bottom: 1px solid #dbe4e4;
+}
+.active-article-share{
+  overflow: hidden;
+  margin-top: 5%;
+  & .tag-item{
+    margin: 0;
+    padding: 7px 15px;
+    text-decoration: none;
+  }
+}
+.share-list{
+  float: right;
+  border: 1px solid ($grey * 1.4);
+  border-radius: 30px;
+  margin-bottom: 7%;
+  &:after{
+    clear: both;
+  }
+  & li{
+    display: inline-block;
+    margin-left: 10px;
+    font: 400 20px/20px;
+    padding: 7px 15px;
+    transition: all 0.5s;
+    &:hover{
+      color: $orange;
+      cursor: pointer;
+    }
+    & .social-links{
+      color: inherit;
+      text-decoration: none;
+    }
+  }
+  & .share-it-link{
+    background-color: $orange;
+    border: 1px solid $orange;
+    border-radius: 50%;
+    color: $white;
+    &:hover{
+      background-color: $white;
+    }
+  }
+}
+.hover-share{
+  display: none;
+  transition: all 0.5s;
+}
+.show-share{
+  margin-right: 15px;
+  padding: 7px 15px;
+  float: right;
+  font: 400 13px/13px "Montserrat";
+  color: #222222;
+  text-transform: uppercase;
+  & .dating{
+    display: inline-block;
+    border-right: 1px solid #dbe4e4;
+    margin-right: 15px;
+    padding-right: 15px;
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+    transition: all 0.5s;
+    &:hover{
+      color: $orange;
+    }
+  }
+  & .alt{
+    color: inherit;
+    padding: 15px;
+    border-radius: 50%;
+    border: 1px solid #dbe4e4;
+    text-decoration: none;
+    &:hover{
+      color: $orange;
+    }
+  }
+}
+.sound{
+  margin: 3% 0;
+  border: none;
+}
+.blue-bg{
 
+}
+.quote-paragraph{
+  position: relative;
+  background-color: $blue;
+  padding: 80px;
+  quotes: "\201C" "\201D";
+  color: #ffffff;
+  font: 400 15px/28px "Domine";
+  &:before{
+    position: absolute;
+    left: 50px;
+    color: #ffffff;
+    font: 400 100px/28px "Montserrat";
+    text-transform: uppercase;
+    content: open-quote;
+  }
+  &:after{
+    position: absolute;
+    bottom: 20px;
+    right: 50px;
+    color: #ffffff;
+    font: 400 100px/28px "Montserrat";
+    text-transform: uppercase;
+    content: close-quote;
+  }
+}
+.paging-wrap{
+  color: #222222;
+  font: 400 14px/28px "Montserrat";
+  text-transform: uppercase;
+  & li{
+    display: inline-block;
+    border-right: 1px solid #dbe4e4;
+    margin: 5% 0;
+    padding: 0 15px;
+    &:last-child{
+      border: none;
+    }
+    & a{
+      color: inherit;
+      text-decoration: none;
+    }
+  }
+}
+.arrow-wrap-left{
+  background-color: $green;
+  color: #ffffff;
+  padding: 5px 10px;
+  border-radius: 50%;
+  font-size: 15px;
+  margin-right: 10px;
+  transition: all 0.5s;
+  &:hover{
+    background-color: #ffffff;
+    color: $green;
+  }
+}
+.arrow-wrap-right{
+  background-color: $orange;
+  color: #ffffff;
+  padding: 5px 10px;
+  border-radius: 50%;
+  font-size: 15px;
+  margin-left: 10px;
+  transition: all 0.5s;
+  &:hover{
+    background-color: #ffffff;
+    color: $green;
+  }
+}
 
 // -----------@medias------------------------------//
               //fsdjlnbsojgnvsljkgnsfmjklgsnfgljksfnglsjgnsfjlkmfsgnlj//
@@ -1522,7 +1688,7 @@ body{
       }
     }
     .blog-article-paragraph{
-      margin: 3% 0 5%;
+      margin: 5% 0 5%;
       font: 400 1rem/1.3rem Domine;
     }
   }
