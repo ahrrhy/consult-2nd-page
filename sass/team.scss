@@ -1,0 +1,145 @@
+$orange: #ffac55;
+$white: #ffffff;
+$blue: #03b6e7;
+$green: #16d428;
+$grey: #838b8c;
+$grey-heading: #343a3b;
+$grey-background: #e7eff1;
+
+.leadership{
+  padding: 7% 0;
+}
+.leaders-list{
+  margin-top: 25px;
+  .about-manager{
+    padding: 50px 40px;
+  }
+  .manager-name{
+    font: 700 1rem/1.2rem "Montserrat";
+    text-transform: uppercase;
+    color: $grey-heading;
+    & span{
+      display: block;
+      font: 400 .95rem/1.5rem "Montserrat";
+      color: $grey * 1.1;
+    }
+    & a{
+      color: inherit;
+      text-decoration: none;
+      transition: all 0.5s;
+      &:hover{
+        color: $orange;
+      }
+    }
+  }
+  .description{
+    margin: 50px 0;
+  }
+  .managers-social{
+    margin-top: 15px;
+  }
+  .managers-social-item{
+    margin-top: 5%;
+    text-transform: uppercase;
+    font: 400 .6rem/1rem "Montserrat";
+    word-spacing: -0.05rem;
+    letter-spacing: -0.06rem;
+    padding: 0;
+    & a{
+      color: inherit;
+      text-decoration: none;
+      transition: all 0.5s;
+      &:hover{
+        color: $blue;
+      }
+    }
+  }
+  .facebook{
+    color: #3b5998;
+  }
+  .twitter{
+    color: #50abf1;
+    & a:hover{
+      color: $orange;
+    }
+  }
+  .google{
+    color: #dc4b3f;
+  }
+}
+.other-team-section{
+  .team-item{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    &:hover .wrapper-for-overlay .overlay{
+      display: block;
+    }
+  }
+  .wrapper-for-overlay{
+    position: relative;
+  }
+  background-color: $grey-background;
+  padding: 7% 0;
+  margin: 0 -15px;
+  .overlay{
+    display: none;
+    height: 100%;
+    overflow: hidden;
+    padding-top: 60%;
+    background-color: rgba(252, 187, 117, 0.7);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: auto;
+    margin: 0 auto;
+    text-align: center;
+    .team-name{
+      color: #ffffff;
+      font-weight: 700 15px/33px Montserrat;
+      text-transform: uppercase;
+      & a{
+        color: inherit;
+        text-decoration: none;
+      }
+      .team-prof{
+        display: block;
+        font-weight: 400 14px/33px Montserrat;
+      }
+    }
+    .managers-social{
+      margin-top: 15px;
+    }
+    .managers-social-item{
+      text-transform: uppercase;
+      font: 400 13px/33px "Montserrat";
+      word-spacing: -0.05rem;
+      letter-spacing: -0.06rem;
+      padding: 0;
+      color: #000000;
+      text-align: center;
+      & a{
+        color: inherit;
+        text-decoration: none;
+        transition: all 0.5s;
+        &:hover{
+          color: $blue;
+        }
+      }
+    }
+    .facebook{
+      color: #000000;
+    }
+    .twitter{
+      color: #000000;
+      & a:hover{
+        color: $orange;
+      }
+    }
+    .google{
+      color: #000000;
+    }
+  }
+}
+
+

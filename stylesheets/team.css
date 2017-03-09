@@ -1,0 +1,169 @@
+/* line 9, ../sass/team.scss */
+.leadership {
+  padding: 7% 0;
+}
+
+/* line 12, ../sass/team.scss */
+.leaders-list {
+  margin-top: 25px;
+}
+/* line 14, ../sass/team.scss */
+.leaders-list .about-manager {
+  padding: 50px 40px;
+}
+/* line 17, ../sass/team.scss */
+.leaders-list .manager-name {
+  font: 700 1rem/1.2rem "Montserrat";
+  text-transform: uppercase;
+  color: #343a3b;
+}
+/* line 21, ../sass/team.scss */
+.leaders-list .manager-name span {
+  display: block;
+  font: 400 .95rem/1.5rem "Montserrat";
+  color: #90999a;
+}
+/* line 26, ../sass/team.scss */
+.leaders-list .manager-name a {
+  color: inherit;
+  text-decoration: none;
+  transition: all 0.5s;
+}
+/* line 30, ../sass/team.scss */
+.leaders-list .manager-name a:hover {
+  color: #ffac55;
+}
+/* line 35, ../sass/team.scss */
+.leaders-list .description {
+  margin: 50px 0;
+}
+/* line 38, ../sass/team.scss */
+.leaders-list .managers-social {
+  margin-top: 15px;
+}
+/* line 41, ../sass/team.scss */
+.leaders-list .managers-social-item {
+  margin-top: 5%;
+  text-transform: uppercase;
+  font: 400 .6rem/1rem "Montserrat";
+  word-spacing: -0.05rem;
+  letter-spacing: -0.06rem;
+  padding: 0;
+}
+/* line 48, ../sass/team.scss */
+.leaders-list .managers-social-item a {
+  color: inherit;
+  text-decoration: none;
+  transition: all 0.5s;
+}
+/* line 52, ../sass/team.scss */
+.leaders-list .managers-social-item a:hover {
+  color: #03b6e7;
+}
+/* line 57, ../sass/team.scss */
+.leaders-list .facebook {
+  color: #3b5998;
+}
+/* line 60, ../sass/team.scss */
+.leaders-list .twitter {
+  color: #50abf1;
+}
+/* line 62, ../sass/team.scss */
+.leaders-list .twitter a:hover {
+  color: #ffac55;
+}
+/* line 66, ../sass/team.scss */
+.leaders-list .google {
+  color: #dc4b3f;
+}
+
+/* line 70, ../sass/team.scss */
+.other-team-section {
+  background-color: #e7eff1;
+  padding: 7% 0;
+  margin: 0 -15px;
+}
+/* line 71, ../sass/team.scss */
+.other-team-section .team-item {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+/* line 74, ../sass/team.scss */
+.other-team-section .team-item:hover .wrapper-for-overlay .overlay {
+  display: block;
+}
+/* line 78, ../sass/team.scss */
+.other-team-section .wrapper-for-overlay {
+  position: relative;
+}
+/* line 84, ../sass/team.scss */
+.other-team-section .overlay {
+  display: none;
+  height: 100%;
+  overflow: hidden;
+  padding-top: 60%;
+  background-color: rgba(252, 187, 117, 0.7);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: auto;
+  margin: 0 auto;
+  text-align: center;
+}
+/* line 97, ../sass/team.scss */
+.other-team-section .overlay .team-name {
+  color: #ffffff;
+  font-weight: 700 15px/33px Montserrat;
+  text-transform: uppercase;
+}
+/* line 101, ../sass/team.scss */
+.other-team-section .overlay .team-name a {
+  color: inherit;
+  text-decoration: none;
+}
+/* line 105, ../sass/team.scss */
+.other-team-section .overlay .team-name .team-prof {
+  display: block;
+  font-weight: 400 14px/33px Montserrat;
+}
+/* line 110, ../sass/team.scss */
+.other-team-section .overlay .managers-social {
+  margin-top: 15px;
+}
+/* line 113, ../sass/team.scss */
+.other-team-section .overlay .managers-social-item {
+  text-transform: uppercase;
+  font: 400 13px/33px "Montserrat";
+  word-spacing: -0.05rem;
+  letter-spacing: -0.06rem;
+  padding: 0;
+  color: #000000;
+  text-align: center;
+}
+/* line 121, ../sass/team.scss */
+.other-team-section .overlay .managers-social-item a {
+  color: inherit;
+  text-decoration: none;
+  transition: all 0.5s;
+}
+/* line 125, ../sass/team.scss */
+.other-team-section .overlay .managers-social-item a:hover {
+  color: #03b6e7;
+}
+/* line 130, ../sass/team.scss */
+.other-team-section .overlay .facebook {
+  color: #000000;
+}
+/* line 133, ../sass/team.scss */
+.other-team-section .overlay .twitter {
+  color: #000000;
+}
+/* line 135, ../sass/team.scss */
+.other-team-section .overlay .twitter a:hover {
+  color: #ffac55;
+}
+/* line 139, ../sass/team.scss */
+.other-team-section .overlay .google {
+  color: #000000;
+}
