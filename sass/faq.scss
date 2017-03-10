@@ -1,0 +1,161 @@
+$orange: #ffac55;
+$black: #000000;
+$white: #ffffff;
+$blue: #03b6e7;
+$green: #16d428;
+$grey: #838b8c;
+$grey-heading: #343a3b;
+$grey-background: #e7eff1;
+
+.faq{
+  padding-top: 7%;
+  padding-bottom: 7%;
+}
+.faq-list{
+  counter-reset: li; /* Initiate a counter */
+  li{
+    padding: 40px 30px 40px 0;
+    border-top: 1px solid $grey-background;
+    position: relative;
+    font: 400 14px/30px Montserrat;
+    &:first-child{
+      border: none;
+    }
+    &:before{
+      display: inline-block;
+      content:counter(li); /* Use the counter as content */
+      counter-increment:li; /* Increment the counter by 1 */
+      width: 30px;
+      height: 30px;
+      margin-right: 15px;
+      border-radius: 50%;
+      color: #fff;
+      background: $orange;
+      font-weight: bold;
+      text-align: center;
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+    }
+    &:hover:before{
+      background: $green;
+    }
+  }
+}
+.question{
+  display: inline-block;
+  text-transform: uppercase;
+  color: $black;
+  font-weight: 700;
+  cursor: pointer;
+}
+.answer{
+  display: none;
+  padding-left: 50px;
+  padding-top: 15px;
+}
+.faq-form-section{
+  padding-top: 7%;
+  padding-bottom: 7%;
+  font: 400 10px/10px Montserrat;
+  color: $white;
+  .faq-form{
+    padding: 30px;
+    background-color: $blue;
+  }
+  .form-header{
+    text-transform: uppercase;
+    span{
+      display: block;
+      font: 700 18px/30px Montserrat;
+    }
+  }
+  input{
+    color: $white;
+    background: none;
+    border: none;
+    border-bottom: 1px solid $white;
+    outline: none;
+    line-height: 20px;
+    width: 100%;
+    padding-top: 20px;
+
+  }
+  ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: $white;
+    text-transform: uppercase;
+  }
+  ::-moz-placeholder { /* Firefox 19+ */
+    color: $white;
+    text-transform: uppercase;
+  }
+  :-ms-input-placeholder { /* IE 10+ */
+    color: $white;
+    text-transform: uppercase;
+  }
+  :-moz-placeholder { /* Firefox 18- */
+    color: $white;
+    text-transform: uppercase;
+  }
+  .faq-question{
+     color: $white;
+     resize: none;
+     background: none;
+     border: none;
+     border-bottom: 1px solid $white;
+     outline: none;
+     width: 100%;
+     height: auto;
+     padding-top: 20px;
+     padding-bottom: 50%;
+  }
+  .faq-submit{
+    text-transform: uppercase;
+    margin-top: 35px;
+    padding: 20px;
+    background-color: $green;
+    border-radius: 30px;
+    border: 1px solid $green;
+    text-align: center;
+    font: 700 10px/10px Montserrat;
+    transition: all ease 0.5s;
+    &:hover{
+      background-color: $white;
+      color: $green;
+    }
+  }
+}
+.faq-contact{
+  overflow: hidden;
+  padding-top: 7%;
+  padding-bottom: 7%;
+  background-color: $blue;
+  .faq-submit{
+    float: right;
+    text-transform: uppercase;
+    margin-top: 20px;
+    padding: 10px 25px;
+    background-color: $green;
+    border-radius: 30px;
+    border: 1px solid $green;
+    text-align: center;
+    font: 700 10px/10px Montserrat;
+    transition: all ease 0.5s;
+    color: $white;
+    text-decoration: none;
+    &:hover{
+      background-color: $white;
+      color: $green;
+    }
+  }
+  .form-header{
+    display: inline-block;
+    text-transform: uppercase;
+    color: $white;
+    font: 700 15px/15px Montserrat;
+    span{
+      display: block;
+      font: 700 30px/30px Montserrat;
+    }
+  }
+}

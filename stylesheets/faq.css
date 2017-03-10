@@ -1,0 +1,188 @@
+/* line 10, ../sass/faq.scss */
+.faq {
+  padding-top: 7%;
+  padding-bottom: 7%;
+}
+
+/* line 14, ../sass/faq.scss */
+.faq-list {
+  counter-reset: li;
+  /* Initiate a counter */
+}
+/* line 16, ../sass/faq.scss */
+.faq-list li {
+  padding: 40px 30px 40px 0;
+  border-top: 1px solid #e7eff1;
+  position: relative;
+  font: 400 14px/30px Montserrat;
+}
+/* line 21, ../sass/faq.scss */
+.faq-list li:first-child {
+  border: none;
+}
+/* line 24, ../sass/faq.scss */
+.faq-list li:before {
+  display: inline-block;
+  content: counter(li);
+  /* Use the counter as content */
+  counter-increment: li;
+  /* Increment the counter by 1 */
+  width: 30px;
+  height: 30px;
+  margin-right: 15px;
+  border-radius: 50%;
+  color: #fff;
+  background: #ffac55;
+  font-weight: bold;
+  text-align: center;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* line 40, ../sass/faq.scss */
+.faq-list li:hover:before {
+  background: #16d428;
+}
+
+/* line 45, ../sass/faq.scss */
+.question {
+  display: inline-block;
+  text-transform: uppercase;
+  color: #000000;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+/* line 52, ../sass/faq.scss */
+.answer {
+  display: none;
+  padding-left: 50px;
+  padding-top: 15px;
+}
+
+/* line 57, ../sass/faq.scss */
+.faq-form-section {
+  padding-top: 7%;
+  padding-bottom: 7%;
+  font: 400 10px/10px Montserrat;
+  color: #ffffff;
+}
+/* line 62, ../sass/faq.scss */
+.faq-form-section .faq-form {
+  padding: 30px;
+  background-color: #03b6e7;
+}
+/* line 66, ../sass/faq.scss */
+.faq-form-section .form-header {
+  text-transform: uppercase;
+}
+/* line 68, ../sass/faq.scss */
+.faq-form-section .form-header span {
+  display: block;
+  font: 700 18px/30px Montserrat;
+}
+/* line 73, ../sass/faq.scss */
+.faq-form-section input {
+  color: #ffffff;
+  background: none;
+  border: none;
+  border-bottom: 1px solid #ffffff;
+  outline: none;
+  line-height: 20px;
+  width: 100%;
+  padding-top: 20px;
+}
+/* line 84, ../sass/faq.scss */
+.faq-form-section ::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: #ffffff;
+  text-transform: uppercase;
+}
+/* line 88, ../sass/faq.scss */
+.faq-form-section ::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #ffffff;
+  text-transform: uppercase;
+}
+/* line 92, ../sass/faq.scss */
+.faq-form-section :-ms-input-placeholder {
+  /* IE 10+ */
+  color: #ffffff;
+  text-transform: uppercase;
+}
+/* line 96, ../sass/faq.scss */
+.faq-form-section :-moz-placeholder {
+  /* Firefox 18- */
+  color: #ffffff;
+  text-transform: uppercase;
+}
+/* line 100, ../sass/faq.scss */
+.faq-form-section .faq-question {
+  color: #ffffff;
+  resize: none;
+  background: none;
+  border: none;
+  border-bottom: 1px solid #ffffff;
+  outline: none;
+  width: 100%;
+  height: auto;
+  padding-top: 20px;
+  padding-bottom: 50%;
+}
+/* line 112, ../sass/faq.scss */
+.faq-form-section .faq-submit {
+  text-transform: uppercase;
+  margin-top: 35px;
+  padding: 20px;
+  background-color: #16d428;
+  border-radius: 30px;
+  border: 1px solid #16d428;
+  text-align: center;
+  font: 700 10px/10px Montserrat;
+  transition: all ease 0.5s;
+}
+/* line 122, ../sass/faq.scss */
+.faq-form-section .faq-submit:hover {
+  background-color: #ffffff;
+  color: #16d428;
+}
+
+/* line 128, ../sass/faq.scss */
+.faq-contact {
+  overflow: hidden;
+  padding-top: 7%;
+  padding-bottom: 7%;
+  background-color: #03b6e7;
+}
+/* line 133, ../sass/faq.scss */
+.faq-contact .faq-submit {
+  float: right;
+  text-transform: uppercase;
+  margin-top: 20px;
+  padding: 10px 25px;
+  background-color: #16d428;
+  border-radius: 30px;
+  border: 1px solid #16d428;
+  text-align: center;
+  font: 700 10px/10px Montserrat;
+  transition: all ease 0.5s;
+  color: #ffffff;
+  text-decoration: none;
+}
+/* line 146, ../sass/faq.scss */
+.faq-contact .faq-submit:hover {
+  background-color: #ffffff;
+  color: #16d428;
+}
+/* line 151, ../sass/faq.scss */
+.faq-contact .form-header {
+  display: inline-block;
+  text-transform: uppercase;
+  color: #ffffff;
+  font: 700 15px/15px Montserrat;
+}
+/* line 156, ../sass/faq.scss */
+.faq-contact .form-header span {
+  display: block;
+  font: 700 30px/30px Montserrat;
+}
