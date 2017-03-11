@@ -1,0 +1,220 @@
+/* line 10, ../sass/industry.scss */
+.supported-industries-section {
+  padding-top: 7%;
+  padding-bottom: 7%;
+}
+/* line 13, ../sass/industry.scss */
+.supported-industries-section .industry-list {
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+/* line 17, ../sass/industry.scss */
+.supported-industries-section .industry-name {
+  font: 700 18px/33px Montserrat;
+  text-transform: uppercase;
+  color: #000000;
+}
+/* line 21, ../sass/industry.scss */
+.supported-industries-section .industry-name a {
+  color: inherit;
+  text-decoration: none;
+}
+/* line 26, ../sass/industry.scss */
+.supported-industries-section .industry-item {
+  margin-top: 95px;
+}
+/* line 28, ../sass/industry.scss */
+.supported-industries-section .industry-item:nth-child(1), .supported-industries-section .industry-item:nth-child(2) {
+  margin-top: 0;
+}
+/* line 31, ../sass/industry.scss */
+.supported-industries-section .industry-item .wrapper {
+  padding-left: 30px;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 28px;
+}
+/* line 37, ../sass/industry.scss */
+.supported-industries-section .industry-item:hover .ico-wrapper {
+  -webkit-box-shadow: 1px 1px 15px 1px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 1px 1px 15px 1px rgba(0, 0, 0, 0.25);
+  box-shadow: 1px 1px 15px 1px rgba(0, 0, 0, 0.25);
+}
+/* line 42, ../sass/industry.scss */
+.supported-industries-section .industry-item:hover .business {
+  background: url("../img/industries/supporting-industries/business.png") center/auto no-repeat;
+}
+/* line 45, ../sass/industry.scss */
+.supported-industries-section .industry-item:hover .education {
+  background: url("../img/industries/supporting-industries/education.png") center/auto no-repeat;
+}
+/* line 48, ../sass/industry.scss */
+.supported-industries-section .industry-item:hover .technology {
+  background: url("../img/industries/supporting-industries/technology.png") center/auto no-repeat;
+}
+/* line 51, ../sass/industry.scss */
+.supported-industries-section .industry-item:hover .real-estate {
+  background: url("../img/industries/supporting-industries/estate.png") center/auto no-repeat;
+}
+/* line 54, ../sass/industry.scss */
+.supported-industries-section .industry-item:hover .telecommunication {
+  background: url("../img/industries/supporting-industries/telecommunication.png") center/auto no-repeat;
+}
+/* line 57, ../sass/industry.scss */
+.supported-industries-section .industry-item:hover .banking-financial {
+  background: url("../img/industries/supporting-industries/banking.png") center/auto no-repeat;
+}
+/* line 60, ../sass/industry.scss */
+.supported-industries-section .industry-item:hover .law {
+  background: url("../img/industries/supporting-industries/law.png") center/auto no-repeat;
+}
+/* line 63, ../sass/industry.scss */
+.supported-industries-section .industry-item:hover .construction {
+  background: url("../img/industries/supporting-industries/construction.png") center/auto no-repeat;
+}
+/* line 67, ../sass/industry.scss */
+.supported-industries-section .ico-wrapper {
+  border: 1px solid #e8eef0;
+  border-radius: 50%;
+  height: 33%;
+  padding-top: 33%;
+}
+/* line 73, ../sass/industry.scss */
+.supported-industries-section .business {
+  background: url("../img/industries/supporting-industries/icon-business.png") center/auto no-repeat;
+}
+/* line 76, ../sass/industry.scss */
+.supported-industries-section .education {
+  background: url("../img/industries/supporting-industries/icon-education.png") center/auto no-repeat;
+}
+/* line 79, ../sass/industry.scss */
+.supported-industries-section .technology {
+  background: url("../img/industries/supporting-industries/icon-technology.png") center/auto no-repeat;
+}
+/* line 82, ../sass/industry.scss */
+.supported-industries-section .real-estate {
+  background: url("../img/industries/supporting-industries/icon-real-estate.png") center/auto no-repeat;
+}
+/* line 85, ../sass/industry.scss */
+.supported-industries-section .telecommunication {
+  background: url("../img/industries/supporting-industries/icon-telecommunication.png") center/auto no-repeat;
+}
+/* line 88, ../sass/industry.scss */
+.supported-industries-section .banking-financial {
+  background: url("../img/industries/supporting-industries/icon-banking.png") center/auto no-repeat;
+}
+/* line 91, ../sass/industry.scss */
+.supported-industries-section .law {
+  background: url("../img/industries/supporting-industries/icon-law.png") center/auto no-repeat;
+}
+/* line 94, ../sass/industry.scss */
+.supported-industries-section .construction {
+  background: url("../img/industries/supporting-industries/icon-construction.png") center/auto no-repeat;
+}
+/* line 97, ../sass/industry.scss */
+.supported-industries-section .request-consult {
+  text-transform: uppercase;
+  margin-top: 35px;
+  padding: 10px;
+  background-color: #16d428;
+  border-radius: 30px;
+  border: 1px solid #16d428;
+  text-align: center;
+  text-decoration: none;
+  color: #ffffff;
+  font: 400 13px/30px Montserrat;
+  transition: all ease 0.5s;
+}
+/* line 109, ../sass/industry.scss */
+.supported-industries-section .request-consult:hover {
+  background-color: #ffffff;
+  color: #16d428;
+}
+
+/* line 115, ../sass/industry.scss */
+.industry-projects {
+  padding-top: 7%;
+  padding-bottom: 7%;
+  background-color: #e7eff1;
+}
+/* line 119, ../sass/industry.scss */
+.industry-projects .projects-list {
+  font-size: 0;
+}
+/* line 121, ../sass/industry.scss */
+.industry-projects .projects-list li {
+  font-size: 14px;
+  margin: 15px 0;
+}
+/* line 124, ../sass/industry.scss */
+.industry-projects .projects-list li:hover .overlay-project {
+  display: block;
+}
+/* line 128, ../sass/industry.scss */
+.industry-projects .projects-list .project-holder {
+  overflow: hidden;
+  position: relative;
+}
+/* line 132, ../sass/industry.scss */
+.industry-projects .projects-list .project-holder:hover .cross-holder {
+  background-color: #cc8a44;
+  z-index: 999;
+}
+/* line 139, ../sass/industry.scss */
+.industry-projects .projects-list .project-holder .tag-span {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  border: 2px solid #ffac55;
+  border-radius: 25px;
+  padding: 2% 4%;
+  font: 400 .9rem/1.1rem Montserrat;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+/* line 150, ../sass/industry.scss */
+.industry-projects .projects-list .project-holder .cross-holder {
+  position: absolute;
+  bottom: -20px;
+  left: -30px;
+  width: 70px;
+  height: 50px;
+  z-index: 99;
+  text-align: center;
+  font: 400 1.5rem/1.5rem Montserrat;
+  color: #ffffff;
+  background-color: #03c8fe;
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+/* line 164, ../sass/industry.scss */
+.industry-projects .projects-list .project-holder .cross-holder a {
+  color: #ffffff;
+  text-decoration: none;
+  display: block;
+  -ms-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+/* line 175, ../sass/industry.scss */
+.industry-projects .project-link-holder {
+  margin: 5% 0;
+}
+/* line 178, ../sass/industry.scss */
+.industry-projects .full-project-link {
+  text-decoration: none;
+  padding: 1%;
+  background-color: #16d428;
+  color: #ffffff;
+  text-transform: uppercase;
+  font: 400 13px/30px Montserrat;
+  border: 1px solid #16d428;
+  border-radius: 25px;
+}
+/* line 187, ../sass/industry.scss */
+.industry-projects .full-project-link:hover {
+  color: #16d428;
+  background: none;
+  border-width: 2px;
+}

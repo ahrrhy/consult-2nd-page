@@ -459,70 +459,291 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   font: 700 30px/30px Montserrat;
 }
 
-/* line 19, ../sass/screen.scss */
+/* line 10, ../sass/industry.scss */
+.supported-industries-section {
+  padding-top: 7%;
+  padding-bottom: 7%;
+}
+/* line 13, ../sass/industry.scss */
+.supported-industries-section .industry-list {
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+/* line 17, ../sass/industry.scss */
+.supported-industries-section .industry-name {
+  font: 700 18px/33px Montserrat;
+  text-transform: uppercase;
+  color: #000000;
+}
+/* line 21, ../sass/industry.scss */
+.supported-industries-section .industry-name a {
+  color: inherit;
+  text-decoration: none;
+}
+/* line 26, ../sass/industry.scss */
+.supported-industries-section .industry-item {
+  margin-top: 95px;
+}
+/* line 28, ../sass/industry.scss */
+.supported-industries-section .industry-item:nth-child(1), .supported-industries-section .industry-item:nth-child(2) {
+  margin-top: 0;
+}
+/* line 31, ../sass/industry.scss */
+.supported-industries-section .industry-item .wrapper {
+  padding-left: 30px;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 28px;
+}
+/* line 37, ../sass/industry.scss */
+.supported-industries-section .industry-item:hover .ico-wrapper {
+  -webkit-box-shadow: 1px 1px 15px 1px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 1px 1px 15px 1px rgba(0, 0, 0, 0.25);
+  box-shadow: 1px 1px 15px 1px rgba(0, 0, 0, 0.25);
+}
+/* line 42, ../sass/industry.scss */
+.supported-industries-section .industry-item:hover .business {
+  background: url("../img/industries/supporting-industries/business.png") center/auto no-repeat;
+}
+/* line 45, ../sass/industry.scss */
+.supported-industries-section .industry-item:hover .education {
+  background: url("../img/industries/supporting-industries/education.png") center/auto no-repeat;
+}
+/* line 48, ../sass/industry.scss */
+.supported-industries-section .industry-item:hover .technology {
+  background: url("../img/industries/supporting-industries/technology.png") center/auto no-repeat;
+}
+/* line 51, ../sass/industry.scss */
+.supported-industries-section .industry-item:hover .real-estate {
+  background: url("../img/industries/supporting-industries/estate.png") center/auto no-repeat;
+}
+/* line 54, ../sass/industry.scss */
+.supported-industries-section .industry-item:hover .telecommunication {
+  background: url("../img/industries/supporting-industries/telecommunication.png") center/auto no-repeat;
+}
+/* line 57, ../sass/industry.scss */
+.supported-industries-section .industry-item:hover .banking-financial {
+  background: url("../img/industries/supporting-industries/banking.png") center/auto no-repeat;
+}
+/* line 60, ../sass/industry.scss */
+.supported-industries-section .industry-item:hover .law {
+  background: url("../img/industries/supporting-industries/law.png") center/auto no-repeat;
+}
+/* line 63, ../sass/industry.scss */
+.supported-industries-section .industry-item:hover .construction {
+  background: url("../img/industries/supporting-industries/construction.png") center/auto no-repeat;
+}
+/* line 67, ../sass/industry.scss */
+.supported-industries-section .ico-wrapper {
+  border: 1px solid #e8eef0;
+  border-radius: 50%;
+  height: 33%;
+  padding-top: 33%;
+}
+/* line 73, ../sass/industry.scss */
+.supported-industries-section .business {
+  background: url("../img/industries/supporting-industries/icon-business.png") center/auto no-repeat;
+}
+/* line 76, ../sass/industry.scss */
+.supported-industries-section .education {
+  background: url("../img/industries/supporting-industries/icon-education.png") center/auto no-repeat;
+}
+/* line 79, ../sass/industry.scss */
+.supported-industries-section .technology {
+  background: url("../img/industries/supporting-industries/icon-technology.png") center/auto no-repeat;
+}
+/* line 82, ../sass/industry.scss */
+.supported-industries-section .real-estate {
+  background: url("../img/industries/supporting-industries/icon-real-estate.png") center/auto no-repeat;
+}
+/* line 85, ../sass/industry.scss */
+.supported-industries-section .telecommunication {
+  background: url("../img/industries/supporting-industries/icon-telecommunication.png") center/auto no-repeat;
+}
+/* line 88, ../sass/industry.scss */
+.supported-industries-section .banking-financial {
+  background: url("../img/industries/supporting-industries/icon-banking.png") center/auto no-repeat;
+}
+/* line 91, ../sass/industry.scss */
+.supported-industries-section .law {
+  background: url("../img/industries/supporting-industries/icon-law.png") center/auto no-repeat;
+}
+/* line 94, ../sass/industry.scss */
+.supported-industries-section .construction {
+  background: url("../img/industries/supporting-industries/icon-construction.png") center/auto no-repeat;
+}
+/* line 97, ../sass/industry.scss */
+.supported-industries-section .request-consult {
+  text-transform: uppercase;
+  margin-top: 35px;
+  padding: 10px;
+  background-color: #16d428;
+  border-radius: 30px;
+  border: 1px solid #16d428;
+  text-align: center;
+  text-decoration: none;
+  color: #ffffff;
+  font: 400 13px/30px Montserrat;
+  transition: all ease 0.5s;
+}
+/* line 109, ../sass/industry.scss */
+.supported-industries-section .request-consult:hover {
+  background-color: #ffffff;
+  color: #16d428;
+}
+
+/* line 115, ../sass/industry.scss */
+.industry-projects {
+  padding-top: 7%;
+  padding-bottom: 7%;
+  background-color: #e7eff1;
+}
+/* line 119, ../sass/industry.scss */
+.industry-projects .projects-list {
+  font-size: 0;
+}
+/* line 121, ../sass/industry.scss */
+.industry-projects .projects-list li {
+  font-size: 14px;
+  margin: 15px 0;
+}
+/* line 124, ../sass/industry.scss */
+.industry-projects .projects-list li:hover .overlay-project {
+  display: block;
+}
+/* line 128, ../sass/industry.scss */
+.industry-projects .projects-list .project-holder {
+  overflow: hidden;
+  position: relative;
+}
+/* line 132, ../sass/industry.scss */
+.industry-projects .projects-list .project-holder:hover .cross-holder {
+  background-color: #cc8a44;
+  z-index: 999;
+}
+/* line 139, ../sass/industry.scss */
+.industry-projects .projects-list .project-holder .tag-span {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  border: 2px solid #ffac55;
+  border-radius: 25px;
+  padding: 2% 4%;
+  font: 400 .9rem/1.1rem Montserrat;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+/* line 150, ../sass/industry.scss */
+.industry-projects .projects-list .project-holder .cross-holder {
+  position: absolute;
+  bottom: -20px;
+  left: -30px;
+  width: 70px;
+  height: 50px;
+  z-index: 99;
+  text-align: center;
+  font: 400 1.5rem/1.5rem Montserrat;
+  color: #ffffff;
+  background-color: #03c8fe;
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+/* line 164, ../sass/industry.scss */
+.industry-projects .projects-list .project-holder .cross-holder a {
+  color: #ffffff;
+  text-decoration: none;
+  display: block;
+  -ms-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+/* line 175, ../sass/industry.scss */
+.industry-projects .project-link-holder {
+  margin: 5% 0;
+}
+/* line 178, ../sass/industry.scss */
+.industry-projects .full-project-link {
+  text-decoration: none;
+  padding: 1%;
+  background-color: #16d428;
+  color: #ffffff;
+  text-transform: uppercase;
+  font: 400 13px/30px Montserrat;
+  border: 1px solid #16d428;
+  border-radius: 25px;
+}
+/* line 187, ../sass/industry.scss */
+.industry-projects .full-project-link:hover {
+  color: #16d428;
+  background: none;
+  border-width: 2px;
+}
+
+/* line 20, ../sass/screen.scss */
 body {
   font: 400 1rem/2rem "Domine";
   color: #838b8c;
 }
 
-/* line 23, ../sass/screen.scss */
+/* line 24, ../sass/screen.scss */
 .container {
   max-width: 1140px;
 }
 
-/* line 27, ../sass/screen.scss */
+/* line 28, ../sass/screen.scss */
 #the-header .for-header-contacts {
   background-color: #262829;
 }
-/* line 30, ../sass/screen.scss */
+/* line 31, ../sass/screen.scss */
 #the-header .header-contacts {
   font: 400 .525rem/1.2rem Montserrat;
   text-transform: uppercase;
 }
-/* line 33, ../sass/screen.scss */
+/* line 34, ../sass/screen.scss */
 #the-header .header-contacts a {
   color: inherit;
   text-decoration: inherit;
 }
-/* line 37, ../sass/screen.scss */
+/* line 38, ../sass/screen.scss */
 #the-header .header-contacts dd {
   display: inline-block;
   border-right: 1px solid #ffffff;
   padding: 1%;
 }
-/* line 41, ../sass/screen.scss */
+/* line 42, ../sass/screen.scss */
 #the-header .header-contacts dd:last-child {
   border: none;
 }
-/* line 45, ../sass/screen.scss */
+/* line 46, ../sass/screen.scss */
 #the-header .header-contacts .header-contact-name {
   color: #ffffff;
   display: inline-block;
 }
-/* line 49, ../sass/screen.scss */
+/* line 50, ../sass/screen.scss */
 #the-header .header-contacts .header-email {
   color: #727779;
 }
-/* line 51, ../sass/screen.scss */
+/* line 52, ../sass/screen.scss */
 #the-header .header-contacts .header-email:hover {
   color: #cdd6da;
   /*╨е╨╝... ╨╕╨╜╤В╨╡╤А╨╡╤Б╨╜╤Л╨╣ ╨┐╨╛╨┤╤Е╨╛╨┤*/
 }
-/* line 55, ../sass/screen.scss */
+/* line 56, ../sass/screen.scss */
 #the-header .header-contacts .header-phone {
   color: #a2a5a6;
 }
-/* line 57, ../sass/screen.scss */
+/* line 58, ../sass/screen.scss */
 #the-header .header-contacts .header-phone:hover {
   color: #e3e7e8;
 }
 
-/* line 63, ../sass/screen.scss */
+/* line 64, ../sass/screen.scss */
 .right-padding-plus {
   padding-right: 50px;
 }
 
-/* line 67, ../sass/screen.scss */
+/* line 68, ../sass/screen.scss */
 #navigator .a-navbar {
   background: none;
   border: none;
@@ -531,48 +752,48 @@ body {
   margin-bottom: 0;
   padding-bottom: 20px;
 }
-/* line 74, ../sass/screen.scss */
+/* line 75, ../sass/screen.scss */
 #navigator .a-navbar .for-right-navbar {
   text-transform: uppercase;
 }
-/* line 78, ../sass/screen.scss */
+/* line 79, ../sass/screen.scss */
 #navigator .brand-holder {
   padding: 30px 15px;
 }
-/* line 81, ../sass/screen.scss */
+/* line 82, ../sass/screen.scss */
 #navigator .nav-button {
   margin-top: 40px;
-  background-color: white;
+  background-color: #ffffff;
   /*╨в╤Л ╨╢╨╡ ╨▓╨╡╨╖╨┤╨╡ ╨Э╨Х╨е ╨╕╤Б╨┐╨╛╨╗╤М╨╖╤Г╨╡╤И╤М. ╨в╨░╨║ ╨╕ ╨▓╨╡╨╖╨┤╨╡ ╨╕╤Б╨┐╨╛╨╗╤М╨╖╤Г╨╣. */
 }
-/* line 85, ../sass/screen.scss */
+/* line 86, ../sass/screen.scss */
 #navigator .custom-navbar-collapse {
   border: none;
 }
-/* line 88, ../sass/screen.scss */
+/* line 89, ../sass/screen.scss */
 #navigator .for-right-navbar {
   padding: 30px 0 0 0;
   /*30 0 0 - ╨▒╤Л╨╗╨╛ ╨▒╤Л ╨┤╨╛╤Б╤В╨░╤В╨╛╤З╨╜╨╛*/
 }
-/* line 91, ../sass/screen.scss */
+/* line 92, ../sass/screen.scss */
 #navigator .for-right-links {
   color: #4e4e4e;
   text-align: center;
 }
-/* line 94, ../sass/screen.scss */
+/* line 95, ../sass/screen.scss */
 #navigator .for-right-links a {
   text-decoration: none;
 }
-/* line 96, ../sass/screen.scss */
+/* line 97, ../sass/screen.scss */
 #navigator .for-right-links a:hover {
   color: #ffac55;
 }
-/* line 99, ../sass/screen.scss */
+/* line 100, ../sass/screen.scss */
 #navigator .for-right-links a:active {
   color: #ffac55;
 }
 
-/* line 105, ../sass/screen.scss */
+/* line 106, ../sass/screen.scss */
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
@@ -581,7 +802,7 @@ body {
   color: #ffac55;
 }
 
-/* line 112, ../sass/screen.scss */
+/* line 113, ../sass/screen.scss */
 .navbar-default .navbar-nav > .open > a,
 .navbar-default .navbar-nav > .open > a:hover,
 .navbar-default .navbar-nav > .open > a:focus {
@@ -590,28 +811,28 @@ body {
   color: #ffac55;
 }
 
-/* line 119, ../sass/screen.scss */
+/* line 120, ../sass/screen.scss */
 .slider-background {
   background: transparent url("../img/slider-bg.png") center/cover no-repeat;
   width: 100%;
   height: 80vh;
 }
 
-/* line 124, ../sass/screen.scss */
+/* line 125, ../sass/screen.scss */
 .carousel-control.left, .carousel-control.right {
   width: 10%;
 }
 
-/* line 127, ../sass/screen.scss */
+/* line 128, ../sass/screen.scss */
 .menu-holder {
   position: relative;
 }
-/* line 129, ../sass/screen.scss */
+/* line 130, ../sass/screen.scss */
 .menu-holder .header-menu-section {
   position: absolute;
   bottom: 0;
 }
-/* line 132, ../sass/screen.scss */
+/* line 133, ../sass/screen.scss */
 .menu-holder .header-menu-section .menu-header {
   padding: 5%;
   background-color: #ffac55;
@@ -619,90 +840,90 @@ body {
   font: 400 .65rem/1.5rem Montserrat;
   text-transform: uppercase;
 }
-/* line 138, ../sass/screen.scss */
+/* line 139, ../sass/screen.scss */
 .menu-holder .header-menu-section .menu-header .making-block {
   display: inline-block;
   font: 300 1.2rem/1.6rem Lato;
 }
-/* line 143, ../sass/screen.scss */
+/* line 144, ../sass/screen.scss */
 .menu-holder .header-menu-section .navigation-menu {
   -moz-column-count: 2;
   -webkit-column-count: 2;
   column-count: 2;
   font-size: 0;
 }
-/* line 148, ../sass/screen.scss */
+/* line 149, ../sass/screen.scss */
 .menu-holder .header-menu-section .navigation-menu li {
   border: 1px solid #03a4d0;
   border-width: 1px 1px 0 0;
 }
-/* line 151, ../sass/screen.scss */
+/* line 152, ../sass/screen.scss */
 .menu-holder .header-menu-section .navigation-menu li:hover {
   background-color: #03a4d0;
 }
-/* line 154, ../sass/screen.scss */
+/* line 155, ../sass/screen.scss */
 .menu-holder .header-menu-section .navigation-menu li:first-child {
   border-width: 0 1px 0 0;
 }
-/* line 157, ../sass/screen.scss */
+/* line 158, ../sass/screen.scss */
 .menu-holder .header-menu-section .navigation-menu li:nth-child(4) {
   border: none;
 }
-/* line 160, ../sass/screen.scss */
+/* line 161, ../sass/screen.scss */
 .menu-holder .header-menu-section .navigation-menu li:nth-child(6) {
   border-width: 1px 0 0 0;
 }
-/* line 163, ../sass/screen.scss */
+/* line 164, ../sass/screen.scss */
 .menu-holder .header-menu-section .navigation-menu li:nth-child(5) {
   border-width: 1px 0 0 0;
 }
-/* line 166, ../sass/screen.scss */
+/* line 167, ../sass/screen.scss */
 .menu-holder .header-menu-section .navigation-menu li a {
   text-decoration: none;
 }
-/* line 170, ../sass/screen.scss */
+/* line 171, ../sass/screen.scss */
 .menu-holder .header-menu-section .navigation-menu .industry-link {
   color: #ffffff;
   text-transform: uppercase;
   font: 400 .7rem/1.5rem Montserrat;
 }
-/* line 174, ../sass/screen.scss */
+/* line 175, ../sass/screen.scss */
 .menu-holder .header-menu-section .navigation-menu .industry-link .for-menu-ico {
   float: right;
   padding-right: 5%;
 }
-/* line 179, ../sass/screen.scss */
+/* line 180, ../sass/screen.scss */
 .menu-holder .header-menu-section .navigation-menu .education {
   padding: 28% 0 2% 15%;
   background: #03b6e7 url("../img/menu-ico/icon-education.png") 20% 30%/auto no-repeat;
 }
-/* line 183, ../sass/screen.scss */
+/* line 184, ../sass/screen.scss */
 .menu-holder .header-menu-section .navigation-menu .technology {
   padding: 28% 0 2% 15%;
   background: #03b6e7 url("../img/menu-ico/icon-technology.png") 20% 30%/auto no-repeat;
 }
-/* line 187, ../sass/screen.scss */
+/* line 188, ../sass/screen.scss */
 .menu-holder .header-menu-section .navigation-menu .banking {
   padding: 28% 0 2% 15%;
   background: #03b6e7 url("../img/menu-ico/icon-banking.png") 20% 30%/auto no-repeat;
 }
-/* line 191, ../sass/screen.scss */
+/* line 192, ../sass/screen.scss */
 .menu-holder .header-menu-section .navigation-menu .business {
   padding: 28% 0 2% 15%;
   background: #03b6e7 url("../img/menu-ico/icon-business.png") 20% 30%/auto no-repeat;
 }
-/* line 195, ../sass/screen.scss */
+/* line 196, ../sass/screen.scss */
 .menu-holder .header-menu-section .navigation-menu .real-estate {
   padding: 28% 0 2% 15%;
   background: #03b6e7 url("../img/menu-ico/icon-real-estate.png") 20% 30%/auto no-repeat;
 }
-/* line 199, ../sass/screen.scss */
+/* line 200, ../sass/screen.scss */
 .menu-holder .header-menu-section .navigation-menu .menu-without-ico {
   text-align: center;
   padding: 15%;
   background-color: #03b6e7;
 }
-/* line 203, ../sass/screen.scss */
+/* line 204, ../sass/screen.scss */
 .menu-holder .header-menu-section .navigation-menu .menu-without-ico .view-more {
   padding: calc(10% - 2px);
   background-color: #16d428;
@@ -712,54 +933,54 @@ body {
   border: 2px solid #16d428;
   border-radius: 25px;
 }
-/* line 211, ../sass/screen.scss */
+/* line 212, ../sass/screen.scss */
 .menu-holder .header-menu-section .navigation-menu .menu-without-ico .view-more:hover {
   color: #16d428;
   background: none;
   border-width: 2px;
 }
 
-/* line 221, ../sass/screen.scss */
+/* line 222, ../sass/screen.scss */
 .article-header {
   color: #767d7e;
   font: 400 1rem/1.5rem Montserrat;
   text-transform: uppercase;
 }
-/* line 225, ../sass/screen.scss */
+/* line 226, ../sass/screen.scss */
 .article-header span {
   color: #343a3b;
   font: 400 2rem/2rem Montserrat;
   display: block;
 }
 
-/* line 231, ../sass/screen.scss */
+/* line 232, ../sass/screen.scss */
 #about-section {
   padding: 7% 0;
 }
-/* line 234, ../sass/screen.scss */
+/* line 235, ../sass/screen.scss */
 #about-section .about-article .about-header {
   color: #767d7e;
   font: 400 1rem/1.5rem Montserrat;
   text-transform: uppercase;
 }
-/* line 238, ../sass/screen.scss */
+/* line 239, ../sass/screen.scss */
 #about-section .about-article .about-header span {
   color: #343a3b;
   font: 400 2rem/2rem Montserrat;
   display: block;
 }
-/* line 244, ../sass/screen.scss */
+/* line 245, ../sass/screen.scss */
 #about-section .about-article .about-article-paragraph {
   margin: 3% 0;
   color: #838b8c;
   font: 400 1rem/2rem Domine;
 }
-/* line 249, ../sass/screen.scss */
+/* line 250, ../sass/screen.scss */
 #about-section .about-article .link-holder {
   padding: 0 0 5%;
   text-align: center;
 }
-/* line 253, ../sass/screen.scss */
+/* line 254, ../sass/screen.scss */
 #about-section .about-article .read-more-link {
   text-decoration: none;
   padding: 2%;
@@ -770,13 +991,13 @@ body {
   border: 1px solid #16d428;
   border-radius: 25px;
 }
-/* line 262, ../sass/screen.scss */
+/* line 263, ../sass/screen.scss */
 #about-section .about-article .read-more-link:hover {
   color: #16d428;
   background: none;
   border-width: 2px;
 }
-/* line 270, ../sass/screen.scss */
+/* line 271, ../sass/screen.scss */
 #about-section .about-img-holder .badge-holder {
   text-align: center;
   color: #ffffff;
@@ -787,7 +1008,7 @@ body {
   margin: 2% auto;
   box-shadow: 0 10px 5px 2px #d5dbdc;
 }
-/* line 279, ../sass/screen.scss */
+/* line 280, ../sass/screen.scss */
 #about-section .about-img-holder .badge-holder .years-of-excellence {
   background: url("../img/badge-icon.png") center 0/40% no-repeat;
   border: 1px solid #ffffff;
@@ -795,83 +1016,83 @@ body {
   font: 400 .7rem/.7rem Montserrat;
   padding: 40% 1% 5%;
 }
-/* line 285, ../sass/screen.scss */
+/* line 286, ../sass/screen.scss */
 #about-section .about-img-holder .badge-holder .years-of-excellence span {
   font: 400 3rem/3rem Montserrat;
   display: block;
 }
 
-/* line 293, ../sass/screen.scss */
+/* line 294, ../sass/screen.scss */
 #steps {
   background-color: #e7eff1;
   padding: 7% 0;
 }
-/* line 297, ../sass/screen.scss */
+/* line 298, ../sass/screen.scss */
 #steps .steps-list .step-one {
   background: url("../img/steps/step-1.png.png") 14px 0/auto no-repeat;
   padding-top: 80px;
 }
-/* line 301, ../sass/screen.scss */
+/* line 302, ../sass/screen.scss */
 #steps .steps-list .step-two {
   background: url("../img/steps/step-2.png.png") 14px 0/auto no-repeat;
   padding-top: 80px;
 }
-/* line 305, ../sass/screen.scss */
+/* line 306, ../sass/screen.scss */
 #steps .steps-list .step-three {
   background: url("../img/steps/step-3.png.png") 4px 0/auto no-repeat;
   padding-top: 80px;
 }
-/* line 309, ../sass/screen.scss */
+/* line 310, ../sass/screen.scss */
 #steps .steps-list .step-one, #steps .steps-list .step-two, #steps .steps-list .step-three {
   margin: 2% 0 2% 0;
 }
-/* line 311, ../sass/screen.scss */
+/* line 312, ../sass/screen.scss */
 #steps .steps-list .step-one .step-header, #steps .steps-list .step-two .step-header, #steps .steps-list .step-three .step-header {
   margin: 0 0 2%;
   font: 400 1.1rem/1.3rem Montserrat;
   color: #16d428;
 }
-/* line 315, ../sass/screen.scss */
+/* line 316, ../sass/screen.scss */
 #steps .steps-list .step-one .step-header span, #steps .steps-list .step-two .step-header span, #steps .steps-list .step-three .step-header span {
   color: #343a3b;
   display: block;
   font: 700 1.05rem/1.4rem Montserrat;
   text-transform: uppercase;
 }
-/* line 322, ../sass/screen.scss */
+/* line 323, ../sass/screen.scss */
 #steps .steps-list .step-one .step-paragraph, #steps .steps-list .step-two .step-paragraph, #steps .steps-list .step-three .step-paragraph {
   color: #838b8c;
   font: 400 1rem/1.5rem Domine;
 }
 
-/* line 329, ../sass/screen.scss */
+/* line 330, ../sass/screen.scss */
 #projects-section {
   padding: 7% 0;
 }
-/* line 332, ../sass/screen.scss */
+/* line 333, ../sass/screen.scss */
 #projects-section .projects .projects-list {
   font-size: 0;
 }
-/* line 334, ../sass/screen.scss */
+/* line 335, ../sass/screen.scss */
 #projects-section .projects .projects-list li {
   font-size: 14px;
   margin: 15px 0;
 }
-/* line 337, ../sass/screen.scss */
+/* line 338, ../sass/screen.scss */
 #projects-section .projects .projects-list li:hover .overlay-project {
   display: block;
 }
-/* line 341, ../sass/screen.scss */
+/* line 342, ../sass/screen.scss */
 #projects-section .projects .projects-list .project-holder {
   overflow: hidden;
   position: relative;
 }
-/* line 345, ../sass/screen.scss */
+/* line 346, ../sass/screen.scss */
 #projects-section .projects .projects-list .project-holder:hover .cross-holder {
   background-color: #cc8a44;
   z-index: 999;
 }
-/* line 352, ../sass/screen.scss */
+/* line 353, ../sass/screen.scss */
 #projects-section .projects .projects-list .project-holder .tag-span {
   position: absolute;
   top: 5%;
@@ -882,7 +1103,7 @@ body {
   font: 400 .9rem/1.1rem Montserrat;
   color: #ffffff;
 }
-/* line 362, ../sass/screen.scss */
+/* line 363, ../sass/screen.scss */
 #projects-section .projects .projects-list .project-holder .cross-holder {
   position: absolute;
   bottom: -20px;
@@ -898,7 +1119,7 @@ body {
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
 }
-/* line 376, ../sass/screen.scss */
+/* line 377, ../sass/screen.scss */
 #projects-section .projects .projects-list .project-holder .cross-holder a {
   color: #ffffff;
   text-decoration: none;
@@ -907,11 +1128,11 @@ body {
   -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
 }
-/* line 388, ../sass/screen.scss */
+/* line 389, ../sass/screen.scss */
 #projects-section .project-link-holder {
   margin: 5% 0;
 }
-/* line 391, ../sass/screen.scss */
+/* line 392, ../sass/screen.scss */
 #projects-section .full-project-link {
   text-decoration: none;
   padding: 1%;
@@ -922,14 +1143,14 @@ body {
   border: 1px solid #16d428;
   border-radius: 25px;
 }
-/* line 400, ../sass/screen.scss */
+/* line 401, ../sass/screen.scss */
 #projects-section .full-project-link:hover {
   color: #16d428;
   background: none;
   border-width: 2px;
 }
 
-/* line 407, ../sass/screen.scss */
+/* line 408, ../sass/screen.scss */
 .overlay-project {
   overflow: hidden;
   display: none;
@@ -943,7 +1164,7 @@ body {
   z-index: 99;
   color: #16d428;
 }
-/* line 419, ../sass/screen.scss */
+/* line 420, ../sass/screen.scss */
 .overlay-project .overlay-text {
   position: absolute;
   top: 50%;
@@ -954,118 +1175,118 @@ body {
   -ms-transform: translateY(-50%);
   /* IE 9 */
 }
-/* line 427, ../sass/screen.scss */
+/* line 428, ../sass/screen.scss */
 .overlay-project .overlay-header {
   text-align: center;
   font: 700 .9rem/1.5rem Montserrat;
 }
-/* line 430, ../sass/screen.scss */
+/* line 431, ../sass/screen.scss */
 .overlay-project .overlay-header a {
   color: #ffffff;
   text-decoration: none;
 }
-/* line 435, ../sass/screen.scss */
+/* line 436, ../sass/screen.scss */
 .overlay-project .overlay-paragraph {
   font: 400 .7rem/1.1rem Domine;
   color: #ffffff;
 }
 
-/* line 440, ../sass/screen.scss */
+/* line 441, ../sass/screen.scss */
 #clients {
   padding: 7% 0;
   background-color: #03b6e7;
 }
-/* line 443, ../sass/screen.scss */
+/* line 444, ../sass/screen.scss */
 #clients .carousel-holder {
   margin: 10% 0;
 }
-/* line 446, ../sass/screen.scss */
+/* line 447, ../sass/screen.scss */
 #clients .slides-list {
   color: #f2f2f2;
   font: 400 .7rem/1.2rem Domine;
 }
-/* line 451, ../sass/screen.scss */
+/* line 452, ../sass/screen.scss */
 #clients .slides-list .slide-holder .client-text span {
   display: block;
   border: 1px solid #ffffff;
   width: 3%;
   margin: 5% 0;
 }
-/* line 458, ../sass/screen.scss */
+/* line 459, ../sass/screen.scss */
 #clients .slides-list .slide-holder .left-blockquote {
   background: url("../img/clients/icon-quote-left.png") 0 0/100% no-repeat;
   display: inline-block;
   padding: 4% 0;
 }
-/* line 463, ../sass/screen.scss */
+/* line 464, ../sass/screen.scss */
 #clients .slides-list .slide-holder .right-blockquote {
   background: url("../img/clients/icon-quote-right.png") 0 0/100% no-repeat;
   display: inline-block;
   padding: 4% 0;
 }
-/* line 471, ../sass/screen.scss */
+/* line 472, ../sass/screen.scss */
 #clients .first-indicator-list .photo-indicator {
   cursor: pointer;
 }
-/* line 473, ../sass/screen.scss */
+/* line 474, ../sass/screen.scss */
 #clients .first-indicator-list .photo-indicator .img-indicator {
   float: left;
 }
-/* line 476, ../sass/screen.scss */
+/* line 477, ../sass/screen.scss */
 #clients .first-indicator-list .photo-indicator figure {
   opacity: 0.5;
 }
-/* line 480, ../sass/screen.scss */
+/* line 481, ../sass/screen.scss */
 #clients .first-indicator-list .photo-indicator .client-text {
   margin: 15% 0;
 }
-/* line 483, ../sass/screen.scss */
+/* line 484, ../sass/screen.scss */
 #clients .first-indicator-list .photo-indicator .client-name {
   margin: 15% 0;
   color: #ffffff;
   font: 700 .6rem/.6rem Montserrat;
 }
-/* line 488, ../sass/screen.scss */
+/* line 489, ../sass/screen.scss */
 #clients .first-indicator-list .photo-indicator .client-specialization {
   color: #f2f2f2;
   font: 400 .6rem/.8rem Domine;
 }
-/* line 495, ../sass/screen.scss */
+/* line 496, ../sass/screen.scss */
 #clients .first-indicator-list .active figure {
   opacity: 1;
 }
-/* line 500, ../sass/screen.scss */
+/* line 501, ../sass/screen.scss */
 #clients .photo-indicator:hover figure {
   opacity: 1;
 }
-/* line 505, ../sass/screen.scss */
+/* line 506, ../sass/screen.scss */
 #clients .photo-indicator:focus figure {
   opacity: 1;
 }
-/* line 510, ../sass/screen.scss */
+/* line 511, ../sass/screen.scss */
 #clients .photo-indicator:active figure {
   opacity: 1;
 }
-/* line 514, ../sass/screen.scss */
+/* line 515, ../sass/screen.scss */
 #clients .white {
   color: #d9d9d9;
 }
-/* line 516, ../sass/screen.scss */
+/* line 517, ../sass/screen.scss */
 #clients .white span {
   color: #ffffff;
 }
 
-/* line 522, ../sass/screen.scss */
+/* line 523, ../sass/screen.scss */
 .second-indicator-list .ico-holder.active, .second-indicator-list .ico-holder:hover {
   border-color: #16d428;
 }
-/* line 524, ../sass/screen.scss */
+/* line 525, ../sass/screen.scss */
 .second-indicator-list .ico-holder.active span, .second-indicator-list .ico-holder:hover span {
   background-color: #16d428;
   transition: all 0.3s ease-in-out 0s;
   transform: scale(1);
 }
-/* line 530, ../sass/screen.scss */
+/* line 531, ../sass/screen.scss */
 .second-indicator-list .ico-holder {
   border: 2px solid #fff;
   border-radius: 50%;
@@ -1077,7 +1298,7 @@ body {
   width: 5px;
   cursor: pointer;
 }
-/* line 540, ../sass/screen.scss */
+/* line 541, ../sass/screen.scss */
 .second-indicator-list .ico-holder span {
   background: #ffffff none repeat scroll 0 0;
   border-radius: 50%;
@@ -1088,99 +1309,99 @@ body {
   width: 3px;
 }
 
-/* line 551, ../sass/screen.scss */
+/* line 552, ../sass/screen.scss */
 #blog-section {
   padding: 5% 0 75%;
   background: #e7eff1 url("../img/blog/blog-bg.png") 0 100%/100% no-repeat;
 }
-/* line 554, ../sass/screen.scss */
+/* line 555, ../sass/screen.scss */
 #blog-section .article-header {
   color: #343a3b;
   font: 400 2rem/2rem Montserrat;
 }
-/* line 557, ../sass/screen.scss */
+/* line 558, ../sass/screen.scss */
 #blog-section .article-header span {
   color: #767d7e;
   font: 400 1rem/1.5rem Montserrat;
   text-transform: uppercase;
 }
-/* line 564, ../sass/screen.scss */
+/* line 565, ../sass/screen.scss */
 #blog-section .blog-article-holder:first-child .date {
   color: #16d428;
 }
-/* line 568, ../sass/screen.scss */
+/* line 569, ../sass/screen.scss */
 #blog-section .blog-link-holder {
   font: 400 .8rem/1.5rem Montserrat;
   padding: 5% 0;
   margin: 2% 0;
 }
-/* line 572, ../sass/screen.scss */
+/* line 573, ../sass/screen.scss */
 #blog-section .blog-link-holder a {
   color: #606668;
   text-decoration: none;
   border-radius: 25px;
   padding: 1%;
 }
-/* line 577, ../sass/screen.scss */
+/* line 578, ../sass/screen.scss */
 #blog-section .blog-link-holder a:hover {
   border-color: #ffac55;
 }
-/* line 580, ../sass/screen.scss */
+/* line 581, ../sass/screen.scss */
 #blog-section .blog-link-holder a:active {
   border-color: #ffac55;
 }
-/* line 583, ../sass/screen.scss */
+/* line 584, ../sass/screen.scss */
 #blog-section .blog-link-holder a:focus {
   border-color: #ffac55;
 }
-/* line 587, ../sass/screen.scss */
+/* line 588, ../sass/screen.scss */
 #blog-section .blog-link-holder .top-posts {
   border: 1px solid #ffac55;
 }
-/* line 590, ../sass/screen.scss */
+/* line 591, ../sass/screen.scss */
 #blog-section .blog-link-holder .check-all {
   border: 1px solid #7d8587;
 }
-/* line 594, ../sass/screen.scss */
+/* line 595, ../sass/screen.scss */
 #blog-section .blog-article-header {
   font: 400 1rem/1.3rem Domine;
   color: #343a3b;
 }
-/* line 597, ../sass/screen.scss */
+/* line 598, ../sass/screen.scss */
 #blog-section .blog-article-header:hover .date {
   color: #16d428;
 }
-/* line 600, ../sass/screen.scss */
+/* line 601, ../sass/screen.scss */
 #blog-section .blog-article-header a {
   color: inherit;
   text-decoration: none;
 }
-/* line 604, ../sass/screen.scss */
+/* line 605, ../sass/screen.scss */
 #blog-section .blog-article-header .making-block {
   display: block;
   font: 700 1.1rem/1.5rem Montserrat;
   text-transform: uppercase;
 }
-/* line 610, ../sass/screen.scss */
+/* line 611, ../sass/screen.scss */
 #blog-section .blog-article-paragraph {
   margin: 3% 0 5%;
   color: #838b8c;
   font: 400 1rem/1.3rem Domine;
 }
 
-/* line 616, ../sass/screen.scss */
+/* line 617, ../sass/screen.scss */
 #contacts-section {
   padding: 5% 0;
 }
-/* line 618, ../sass/screen.scss */
+/* line 619, ../sass/screen.scss */
 #contacts-section .contacts-list {
   margin: 5% 0;
 }
-/* line 620, ../sass/screen.scss */
+/* line 621, ../sass/screen.scss */
 #contacts-section .contacts-list .contact-holder {
   margin: 5% 0;
 }
-/* line 622, ../sass/screen.scss */
+/* line 623, ../sass/screen.scss */
 #contacts-section .contacts-list .contact-holder .contact-wrapper {
   color: #343a3b;
   font: 700 1rem/1.5rem Montserrat;
@@ -1188,7 +1409,7 @@ body {
   padding: 10% 0 10% 35%;
   border: 1px solid #838b8c;
 }
-/* line 628, ../sass/screen.scss */
+/* line 629, ../sass/screen.scss */
 #contacts-section .contacts-list .contact-holder .contact-wrapper .contact {
   display: block;
   color: #343a3b;
@@ -1198,50 +1419,50 @@ body {
   transition: color 0.5s;
   -webkit-transition: color 0.5s;
 }
-/* line 636, ../sass/screen.scss */
+/* line 637, ../sass/screen.scss */
 #contacts-section .contacts-list .contact-holder .contact-wrapper .contact:hover {
   color: #ffac55;
 }
-/* line 644, ../sass/screen.scss */
+/* line 645, ../sass/screen.scss */
 #contacts-section .mail {
   background: url("../img/contacts/icon-email.png") 10% 50%/auto no-repeat;
 }
-/* line 647, ../sass/screen.scss */
+/* line 648, ../sass/screen.scss */
 #contacts-section .call {
   background: url("../img/contacts/icon-call.png") 10% 50%/auto no-repeat;
 }
-/* line 650, ../sass/screen.scss */
+/* line 651, ../sass/screen.scss */
 #contacts-section .career {
   background: url("../img/contacts/icon-career.png") 10% 50%/auto no-repeat;
 }
 
-/* line 654, ../sass/screen.scss */
+/* line 655, ../sass/screen.scss */
 #footer-section {
   padding: 5% 0 0;
   background-color: #262829;
 }
-/* line 657, ../sass/screen.scss */
+/* line 658, ../sass/screen.scss */
 #footer-section .footer-article-header {
   margin-bottom: 10%;
   color: #e1e1e1;
   font: 700 1.3rem/2rem Montserrat;
   text-transform: uppercase;
 }
-/* line 663, ../sass/screen.scss */
+/* line 664, ../sass/screen.scss */
 #footer-section .news-letter-paragraph {
   color: #838b8c;
   font: 400 1rem/1.2rem Domine;
   margin-bottom: 10%;
 }
-/* line 668, ../sass/screen.scss */
+/* line 669, ../sass/screen.scss */
 #footer-section .subscribe {
   margin-bottom: 3%;
 }
-/* line 671, ../sass/screen.scss */
+/* line 672, ../sass/screen.scss */
 #footer-section .mailchimp-holder {
   border: none;
 }
-/* line 674, ../sass/screen.scss */
+/* line 675, ../sass/screen.scss */
 #footer-section .email {
   font: 400 .9rem/1.5rem Montserrat;
   color: white;
@@ -1253,35 +1474,35 @@ body {
   background-color: #323334;
   outline: none;
 }
-/* line 684, ../sass/screen.scss */
+/* line 685, ../sass/screen.scss */
 #footer-section .email::-webkit-input-placeholder {
   font: 400 .9rem/1.5rem Montserrat;
   color: #5e5e5e;
   text-transform: uppercase;
   padding: 2%;
 }
-/* line 690, ../sass/screen.scss */
+/* line 691, ../sass/screen.scss */
 #footer-section .email::-moz-placeholder {
   font: 400 .9rem/1.5rem Montserrat;
   color: #5e5e5e;
   text-transform: uppercase;
   padding: 2%;
 }
-/* line 696, ../sass/screen.scss */
+/* line 697, ../sass/screen.scss */
 #footer-section .email:-ms-input-placeholder {
   font: 400 .9rem/1.5rem Montserrat;
   color: #5e5e5e;
   text-transform: uppercase;
   padding: 2%;
 }
-/* line 702, ../sass/screen.scss */
+/* line 703, ../sass/screen.scss */
 #footer-section .email:-moz-placeholder {
   font: 400 .9rem/1.5rem Montserrat;
   color: #5e5e5e;
   text-transform: uppercase;
   padding: 2%;
 }
-/* line 709, ../sass/screen.scss */
+/* line 710, ../sass/screen.scss */
 #footer-section .button-subscribe {
   position: absolute;
   right: 10%;
@@ -1297,17 +1518,17 @@ body {
   outline: none;
   transition: all 0.5s ease-in-out 0s;
 }
-/* line 723, ../sass/screen.scss */
+/* line 724, ../sass/screen.scss */
 #footer-section .button-subscribe:hover {
   border: 2px solid #16d428;
   color: #16d428;
   background-color: #2a2c2d;
 }
-/* line 729, ../sass/screen.scss */
+/* line 730, ../sass/screen.scss */
 #footer-section .some-links-list {
   margin-bottom: 10%;
 }
-/* line 732, ../sass/screen.scss */
+/* line 733, ../sass/screen.scss */
 #footer-section .some-link {
   margin: 3% 0;
   color: #838b8c;
@@ -1315,61 +1536,61 @@ body {
   text-transform: uppercase;
   transition: all 0.5s ease-in-out 0s;
 }
-/* line 738, ../sass/screen.scss */
+/* line 739, ../sass/screen.scss */
 #footer-section .some-link:hover {
   color: #ffac55;
 }
-/* line 741, ../sass/screen.scss */
+/* line 742, ../sass/screen.scss */
 #footer-section .some-link a {
   color: inherit;
   text-decoration: none;
 }
-/* line 746, ../sass/screen.scss */
+/* line 747, ../sass/screen.scss */
 #footer-section .footer {
   border-bottom: 1px solid #323334;
 }
-/* line 749, ../sass/screen.scss */
+/* line 750, ../sass/screen.scss */
 #footer-section .copyright-holder {
   margin: 2% 0;
 }
 
-/* line 758, ../sass/screen.scss */
+/* line 759, ../sass/screen.scss */
 .blog-content-wrapper {
   padding-bottom: 7%;
   padding-top: 7%;
 }
 
-/* line 763, ../sass/screen.scss */
+/* line 764, ../sass/screen.scss */
 .active-article {
   font: 400 1rem/2rem "Domine";
   color: #838b8c;
   border-bottom: 1px solid #b7c3c4;
 }
-/* line 767, ../sass/screen.scss */
+/* line 768, ../sass/screen.scss */
 .active-article .active-article-paragraph {
   margin: 5% 0;
 }
-/* line 770, ../sass/screen.scss */
+/* line 771, ../sass/screen.scss */
 .active-article .unordered-list {
   margin-left: 5%;
 }
-/* line 772, ../sass/screen.scss */
+/* line 773, ../sass/screen.scss */
 .active-article .unordered-list .active-article-li {
   list-style: none;
   padding-left: 50px;
   background: url("../img/blog-page/main/tick-icon.png") 0 45%/auto no-repeat;
 }
-/* line 778, ../sass/screen.scss */
+/* line 779, ../sass/screen.scss */
 .active-article .share-list {
   border: 1px solid #b7c3c4;
   border-radius: 30px;
   margin-bottom: 7%;
 }
-/* line 782, ../sass/screen.scss */
+/* line 783, ../sass/screen.scss */
 .active-article .share-list:after {
   clear: both;
 }
-/* line 785, ../sass/screen.scss */
+/* line 786, ../sass/screen.scss */
 .active-article .share-list li {
   display: inline-block;
   margin-left: 10px;
@@ -1377,58 +1598,58 @@ body {
   padding: 7px 15px;
   transition: all 0.5s;
 }
-/* line 791, ../sass/screen.scss */
+/* line 792, ../sass/screen.scss */
 .active-article .share-list li:hover {
   color: #ffac55;
   cursor: pointer;
 }
-/* line 795, ../sass/screen.scss */
+/* line 796, ../sass/screen.scss */
 .active-article .share-list li .social-links {
   color: inherit;
   text-decoration: none;
 }
-/* line 800, ../sass/screen.scss */
+/* line 801, ../sass/screen.scss */
 .active-article .share-list .share-it-link {
   background-color: #ffac55;
   border: 1px solid #ffac55;
   border-radius: 50%;
   color: #ffffff;
 }
-/* line 805, ../sass/screen.scss */
+/* line 806, ../sass/screen.scss */
 .active-article .share-list .share-it-link:hover {
   background-color: #ffffff;
 }
 
-/* line 811, ../sass/screen.scss */
+/* line 812, ../sass/screen.scss */
 .active-article-photo {
   padding-right: 0;
 }
 
-/* line 814, ../sass/screen.scss */
+/* line 815, ../sass/screen.scss */
 .active-article-header {
   position: relative;
   padding-right: 0;
   margin: 3% 0 5%;
 }
-/* line 818, ../sass/screen.scss */
+/* line 819, ../sass/screen.scss */
 .active-article-header .header-content {
   position: absolute;
   bottom: 0;
   width: 100%;
   float: none;
 }
-/* line 823, ../sass/screen.scss */
+/* line 824, ../sass/screen.scss */
 .active-article-header .header-content a {
   cursor: pointer;
 }
-/* line 826, ../sass/screen.scss */
+/* line 827, ../sass/screen.scss */
 .active-article-header .header-content .header-span {
   color: inherit;
   text-decoration: none;
   background-color: #000000;
   padding: 5px;
 }
-/* line 832, ../sass/screen.scss */
+/* line 833, ../sass/screen.scss */
 .active-article-header .header-content .header-span-paragraph {
   display: flex;
   font: 700 .7rem/1.4rem 'Montserrat';
@@ -1437,11 +1658,11 @@ body {
   padding: 0;
   margin: 0;
 }
-/* line 840, ../sass/screen.scss */
+/* line 841, ../sass/screen.scss */
 .active-article-header .header-content .date {
   margin: 0;
 }
-/* line 843, ../sass/screen.scss */
+/* line 844, ../sass/screen.scss */
 .active-article-header .header-content .date a {
   font: 400 .7rem/1.4rem 'Montserrat';
   background-color: #ffac55;
@@ -1451,57 +1672,57 @@ body {
   text-transform: uppercase;
   padding: 8%;
 }
-/* line 851, ../sass/screen.scss */
+/* line 852, ../sass/screen.scss */
 .active-article-header .header-content .date a:hover {
   background-color: #ffffff;
   color: #ffac55;
 }
 
-/* line 859, ../sass/screen.scss */
+/* line 860, ../sass/screen.scss */
 .left-padding {
   padding-left: 15px;
 }
 
-/* line 862, ../sass/screen.scss */
+/* line 863, ../sass/screen.scss */
 .minus-left-padding {
   padding-left: 0;
 }
 
-/* line 865, ../sass/screen.scss */
+/* line 866, ../sass/screen.scss */
 .minus-right-padding {
   padding-right: 0;
 }
 
-/* line 869, ../sass/screen.scss */
+/* line 870, ../sass/screen.scss */
 .related-posts {
   clear: both;
   padding-top: 5%;
   padding-bottom: 7%;
   border-bottom: 1px solid #b7c3c4;
 }
-/* line 875, ../sass/screen.scss */
+/* line 876, ../sass/screen.scss */
 .related-posts .related-item .related-img {
   margin-bottom: 15px;
 }
 
-/* line 880, ../sass/screen.scss */
+/* line 881, ../sass/screen.scss */
 .related-header {
   font: 700 1rem/1.5rem "Montserrat";
   color: #343a3b;
   text-transform: uppercase;
 }
-/* line 884, ../sass/screen.scss */
+/* line 885, ../sass/screen.scss */
 .related-header a {
   color: inherit;
   text-decoration: none;
   transition: all 0.5s;
 }
-/* line 888, ../sass/screen.scss */
+/* line 889, ../sass/screen.scss */
 .related-header a:hover {
   color: #ffac55;
 }
 
-/* line 893, ../sass/screen.scss */
+/* line 894, ../sass/screen.scss */
 .date {
   display: inline-block;
   font: 400 1rem/1.8rem "Montserrat";
@@ -1510,30 +1731,30 @@ body {
   transition: all 0.5s;
   margin-bottom: 2%;
 }
-/* line 900, ../sass/screen.scss */
+/* line 901, ../sass/screen.scss */
 .date:hover {
   color: #16d428;
 }
-/* line 903, ../sass/screen.scss */
+/* line 904, ../sass/screen.scss */
 .date a {
   color: inherit;
   text-decoration: none;
 }
 
-/* line 908, ../sass/screen.scss */
+/* line 909, ../sass/screen.scss */
 .blog-page-article-header {
   color: #343a3b;
   text-transform: uppercase;
   font: 700 1.2rem/2.2rem "Montserrat";
   margin-bottom: 1%;
 }
-/* line 913, ../sass/screen.scss */
+/* line 914, ../sass/screen.scss */
 .blog-page-article-header a {
   color: inherit;
   text-decoration: none;
 }
 
-/* line 918, ../sass/screen.scss */
+/* line 919, ../sass/screen.scss */
 .visitors-comments {
   padding-top: 7%;
   padding-bottom: 7%;
@@ -1541,19 +1762,19 @@ body {
   color: #838b8c;
   border-bottom: 1px solid #b7c3c4;
 }
-/* line 924, ../sass/screen.scss */
+/* line 925, ../sass/screen.scss */
 .visitors-comments .custom-media-list {
   margin-top: 4%;
 }
-/* line 927, ../sass/screen.scss */
+/* line 928, ../sass/screen.scss */
 .visitors-comments .custom-media {
   margin-top: 30px;
 }
-/* line 930, ../sass/screen.scss */
+/* line 931, ../sass/screen.scss */
 .visitors-comments .custom-media-body {
   clear: both;
 }
-/* line 933, ../sass/screen.scss */
+/* line 934, ../sass/screen.scss */
 .visitors-comments .reply-btn {
   float: right;
   padding: 0 2%;
@@ -1565,35 +1786,35 @@ body {
   transition: all 0.5s;
   cursor: pointer;
 }
-/* line 943, ../sass/screen.scss */
+/* line 944, ../sass/screen.scss */
 .visitors-comments .reply-btn a {
   color: inherit;
 }
-/* line 946, ../sass/screen.scss */
+/* line 947, ../sass/screen.scss */
 .visitors-comments .reply-btn:hover {
   background-color: #ffffff;
   color: #16d428;
 }
 
-/* line 952, ../sass/screen.scss */
+/* line 953, ../sass/screen.scss */
 .blog-aside-content {
   font: 400 1rem/2rem "Domine";
   color: #838b8c;
 }
 
-/* line 956, ../sass/screen.scss */
+/* line 957, ../sass/screen.scss */
 .aside-search-form {
   position: relative;
   padding-bottom: 5%;
   padding-right: 15px;
 }
-/* line 960, ../sass/screen.scss */
+/* line 961, ../sass/screen.scss */
 .aside-search-form .search-header {
   color: #898e8f;
   font: 400 1rem/2rem "Montserrat";
   text-transform: uppercase;
 }
-/* line 965, ../sass/screen.scss */
+/* line 966, ../sass/screen.scss */
 .aside-search-form .search-input {
   outline: none;
   padding: 2% 2% 2% 5%;
@@ -1604,7 +1825,7 @@ body {
   width: 100%;
   position: relative;
 }
-/* line 975, ../sass/screen.scss */
+/* line 976, ../sass/screen.scss */
 .aside-search-form .aside-search-submit {
   padding: 0;
   background: none;
@@ -1612,7 +1833,7 @@ body {
   border-radius: 0;
   width: 0;
 }
-/* line 982, ../sass/screen.scss */
+/* line 983, ../sass/screen.scss */
 .aside-search-form .label-submit {
   padding-right: 15px;
   margin-right: 15px;
@@ -1630,12 +1851,12 @@ body {
   text-transform: uppercase;
 }
 
-/* line 997, ../sass/screen.scss */
+/* line 998, ../sass/screen.scss */
 .aside-categories {
   padding-top: 7%;
   padding-bottom: 7%;
 }
-/* line 1001, ../sass/screen.scss */
+/* line 1002, ../sass/screen.scss */
 .aside-categories .categories-list .categories-item {
   margin-top: 3%;
   padding-left: 20px;
@@ -1644,27 +1865,27 @@ body {
   background: url("../img/blog-page/slice-2.png") 0 45%/auto no-repeat;
   transition: all 0.5s;
 }
-/* line 1008, ../sass/screen.scss */
+/* line 1009, ../sass/screen.scss */
 .aside-categories .categories-list .categories-item:hover {
   color: #ffac55;
 }
-/* line 1011, ../sass/screen.scss */
+/* line 1012, ../sass/screen.scss */
 .aside-categories .categories-list .categories-item a {
   color: inherit;
   text-decoration: none;
 }
 
-/* line 1018, ../sass/screen.scss */
+/* line 1019, ../sass/screen.scss */
 .blog-aside-content .related-posts {
   border: none;
 }
 
-/* line 1021, ../sass/screen.scss */
+/* line 1022, ../sass/screen.scss */
 .tages-list {
   overflow: hidden;
 }
 
-/* line 1024, ../sass/screen.scss */
+/* line 1025, ../sass/screen.scss */
 .tag-item {
   float: left;
   padding: 2% 4%;
@@ -1679,41 +1900,41 @@ body {
   transition: all 0.5s;
   cursor: pointer;
 }
-/* line 1037, ../sass/screen.scss */
+/* line 1038, ../sass/screen.scss */
 .tag-item a {
   color: inherit;
   text-decoration: none;
 }
-/* line 1041, ../sass/screen.scss */
+/* line 1042, ../sass/screen.scss */
 .tag-item:hover {
   background-color: #ffffff;
   color: #16d428;
 }
 
-/* line 1046, ../sass/screen.scss */
+/* line 1047, ../sass/screen.scss */
 .make-bigger {
   font: 400 15px/30px "Montserrat";
 }
 
-/* line 1049, ../sass/screen.scss */
+/* line 1050, ../sass/screen.scss */
 .tags-section {
   padding-top: 5%;
   padding-bottom: 5%;
 }
 
-/* line 1053, ../sass/screen.scss */
+/* line 1054, ../sass/screen.scss */
 .little-monkey {
   clear: both;
   padding-bottom: 5%;
   padding-top: 6%;
   margin-top: 7%;
 }
-/* line 1058, ../sass/screen.scss */
+/* line 1059, ../sass/screen.scss */
 .little-monkey .little-monkey-form {
   border: 1px solid #d2dbdd;
   padding: 5%;
 }
-/* line 1061, ../sass/screen.scss */
+/* line 1062, ../sass/screen.scss */
 .little-monkey .little-monkey-form input {
   width: 100%;
   margin: 2% 0;
@@ -1721,49 +1942,49 @@ body {
   padding: 2% 5%;
   border: 1px solid #d2dbdd;
 }
-/* line 1068, ../sass/screen.scss */
+/* line 1069, ../sass/screen.scss */
 .little-monkey .little-monkey-form .button {
   margin-bottom: 5%;
 }
-/* line 1072, ../sass/screen.scss */
+/* line 1073, ../sass/screen.scss */
 .little-monkey .little-monkey-header {
   font: 400 14px/28px "Montserrat";
   color: #343a3b;
   text-transform: uppercase;
   padding: 4% 0;
 }
-/* line 1077, ../sass/screen.scss */
+/* line 1078, ../sass/screen.scss */
 .little-monkey .little-monkey-header span {
   font: 700 18px/28px "Montserrat";
   display: block;
 }
 
-/* line 1083, ../sass/screen.scss */
+/* line 1084, ../sass/screen.scss */
 .float-none {
   float: none;
 }
 
-/* line 1086, ../sass/screen.scss */
+/* line 1087, ../sass/screen.scss */
 .right-padding {
   padding-right: 15px;
 }
 
-/* line 1089, ../sass/screen.scss */
+/* line 1090, ../sass/screen.scss */
 .leave-message-section {
   background-color: #e7eff1;
   padding-bottom: 5%;
   padding-top: 5%;
 }
-/* line 1093, ../sass/screen.scss */
+/* line 1094, ../sass/screen.scss */
 .leave-message-section .form-item {
   margin-top: 2%;
 }
-/* line 1096, ../sass/screen.scss */
+/* line 1097, ../sass/screen.scss */
 .leave-message-section .massage-input {
   resize: none;
   padding: 3% 0;
 }
-/* line 1100, ../sass/screen.scss */
+/* line 1101, ../sass/screen.scss */
 .leave-message-section .c-input {
   width: 100%;
   border: none;
@@ -1775,7 +1996,7 @@ body {
   color: #343a3b;
   font: 400 .8rem/2.1rem "Montserrat";
 }
-/* line 1111, ../sass/screen.scss */
+/* line 1112, ../sass/screen.scss */
 .leave-message-section .submit-input {
   width: auto;
   padding: 1% 2%;
@@ -1783,13 +2004,13 @@ body {
   outline: none;
 }
 
-/* line 1121, ../sass/screen.scss */
+/* line 1122, ../sass/screen.scss */
 .what-we-do {
   padding-top: 5%;
   padding-bottom: 5%;
 }
 
-/* line 1125, ../sass/screen.scss */
+/* line 1126, ../sass/screen.scss */
 .excellence-wrapper {
   background-color: #03b6e7;
   font: 400 .8rem/2.1rem "Montserrat";
@@ -1798,7 +2019,7 @@ body {
   box-shadow: 0 2px 5px 5px #d5dbdc;
   border: 8px solid #ffffff;
 }
-/* line 1132, ../sass/screen.scss */
+/* line 1133, ../sass/screen.scss */
 .excellence-wrapper .reward {
   border: 1px solid #ffffff;
   background: url("../img/badge-icon.png") center 0/60% no-repeat;
@@ -1806,136 +2027,136 @@ body {
   font: 400 4rem/4rem Montserrat;
   padding: 70% 1% 5%;
 }
-/* line 1138, ../sass/screen.scss */
+/* line 1139, ../sass/screen.scss */
 .excellence-wrapper .reward span {
   font: 400 .8rem/.9rem Montserrat;
   display: block;
 }
-/* line 1143, ../sass/screen.scss */
+/* line 1144, ../sass/screen.scss */
 .excellence-wrapper .happy-clients {
   margin: 50px 0;
   text-transform: uppercase;
   font: 400 3rem/3rem Montserrat;
 }
-/* line 1147, ../sass/screen.scss */
+/* line 1148, ../sass/screen.scss */
 .excellence-wrapper .happy-clients span {
   margin-top: 10px;
   font: 400 .8rem/.9rem Montserrat;
   display: block;
 }
 
-/* line 1154, ../sass/screen.scss */
+/* line 1155, ../sass/screen.scss */
 .core-values {
   background-color: #e7eff1;
   padding-top: 5%;
   padding-bottom: 5%;
 }
 
-/* line 1159, ../sass/screen.scss */
+/* line 1160, ../sass/screen.scss */
 .values-list {
   margin-top: 7%;
 }
 
-/* line 1162, ../sass/screen.scss */
+/* line 1163, ../sass/screen.scss */
 .satisfaction {
   margin-top: 2%;
   padding-top: 70px;
   background: url("../img/about-page/values/icon-client-satisfaction.png") 0 0/auto no-repeat;
 }
 
-/* line 1167, ../sass/screen.scss */
+/* line 1168, ../sass/screen.scss */
 .support {
   margin-top: 2%;
   padding-top: 70px;
   background: url("../img/about-page/values/icon-fully-support.png") 0 0/auto no-repeat;
 }
 
-/* line 1172, ../sass/screen.scss */
+/* line 1173, ../sass/screen.scss */
 .win {
   margin-top: 2%;
   padding-top: 70px;
   background: url("../img/about-page/values/icon-win.png") 0 0/auto no-repeat;
 }
 
-/* line 1177, ../sass/screen.scss */
+/* line 1178, ../sass/screen.scss */
 .mission-vision {
   padding-top: 5%;
   padding-bottom: 5%;
 }
-/* line 1180, ../sass/screen.scss */
+/* line 1181, ../sass/screen.scss */
 .mission-vision article {
   margin-bottom: 5%;
 }
-/* line 1182, ../sass/screen.scss */
+/* line 1183, ../sass/screen.scss */
 .mission-vision article img {
   margin: 5% 0;
 }
-/* line 1186, ../sass/screen.scss */
+/* line 1187, ../sass/screen.scss */
 .mission-vision .contact-us-btn {
   padding: 10px 20px;
   text-decoration: none;
   float: none;
 }
 
-/* line 1192, ../sass/screen.scss */
+/* line 1193, ../sass/screen.scss */
 .management {
   padding-top: 5%;
   padding-bottom: 5%;
   border-top: 1px solid #dbe4e4;
 }
-/* line 1197, ../sass/screen.scss */
+/* line 1198, ../sass/screen.scss */
 .management .in-center .view-team-btn {
   padding: 10px 20px;
   float: none;
   text-decoration: none;
 }
 
-/* line 1204, ../sass/screen.scss */
+/* line 1205, ../sass/screen.scss */
 .managers-list {
   margin: 5% 0;
 }
-/* line 1206, ../sass/screen.scss */
+/* line 1207, ../sass/screen.scss */
 .managers-list .manager-item {
   margin-top: 0;
   padding: 0;
 }
-/* line 1209, ../sass/screen.scss */
+/* line 1210, ../sass/screen.scss */
 .managers-list .manager-item:last-child {
   padding-right: 15px;
 }
-/* line 1212, ../sass/screen.scss */
+/* line 1213, ../sass/screen.scss */
 .managers-list .manager-item .manager-img {
   width: 110px;
   height: 110px;
 }
-/* line 1216, ../sass/screen.scss */
+/* line 1217, ../sass/screen.scss */
 .managers-list .manager-item .media-header {
   font: 700 1rem/1.2rem "Montserrat";
   text-transform: uppercase;
   color: #343a3b;
 }
-/* line 1220, ../sass/screen.scss */
+/* line 1221, ../sass/screen.scss */
 .managers-list .manager-item .media-header span {
   display: block;
   font: 400 .95rem/1.5rem "Montserrat";
   color: #90999a;
 }
-/* line 1225, ../sass/screen.scss */
+/* line 1226, ../sass/screen.scss */
 .managers-list .manager-item .media-header a {
   color: inherit;
   text-decoration: none;
   transition: all 0.5s;
 }
-/* line 1229, ../sass/screen.scss */
+/* line 1230, ../sass/screen.scss */
 .managers-list .manager-item .media-header a:hover {
   color: #ffac55;
 }
-/* line 1234, ../sass/screen.scss */
+/* line 1235, ../sass/screen.scss */
 .managers-list .manager-item .managers-social {
   margin: 10% 0;
   border-top: 1px solid #dbe4e4;
 }
-/* line 1238, ../sass/screen.scss */
+/* line 1239, ../sass/screen.scss */
 .managers-list .manager-item .managers-social-item {
   margin-top: 5%;
   text-transform: uppercase;
@@ -1945,64 +2166,64 @@ body {
   padding: 0;
   text-align: center;
 }
-/* line 1246, ../sass/screen.scss */
+/* line 1247, ../sass/screen.scss */
 .managers-list .manager-item .managers-social-item a {
   color: inherit;
   text-decoration: none;
   transition: all 0.5s;
 }
-/* line 1250, ../sass/screen.scss */
+/* line 1251, ../sass/screen.scss */
 .managers-list .manager-item .managers-social-item a:hover {
   color: #03b6e7;
 }
-/* line 1255, ../sass/screen.scss */
+/* line 1256, ../sass/screen.scss */
 .managers-list .manager-item .facebook {
   color: #3b5998;
 }
-/* line 1258, ../sass/screen.scss */
+/* line 1259, ../sass/screen.scss */
 .managers-list .manager-item .twitter {
   color: #50abf1;
 }
-/* line 1260, ../sass/screen.scss */
+/* line 1261, ../sass/screen.scss */
 .managers-list .manager-item .twitter a:hover {
   color: #ffac55;
 }
-/* line 1264, ../sass/screen.scss */
+/* line 1265, ../sass/screen.scss */
 .managers-list .manager-item .google {
   color: #dc4b3f;
 }
 
-/* line 1272, ../sass/screen.scss */
+/* line 1273, ../sass/screen.scss */
 .blog-article {
   padding-top: 5%;
   padding-bottom: 5%;
   border-bottom: 1px solid #dbe4e4;
 }
 
-/* line 1277, ../sass/screen.scss */
+/* line 1278, ../sass/screen.scss */
 .active-article-share {
   overflow: hidden;
   margin-top: 5%;
 }
-/* line 1280, ../sass/screen.scss */
+/* line 1281, ../sass/screen.scss */
 .active-article-share .tag-item {
   margin: 0;
   padding: 7px 15px;
   text-decoration: none;
 }
 
-/* line 1286, ../sass/screen.scss */
+/* line 1287, ../sass/screen.scss */
 .share-list {
   float: right;
   border: 1px solid #b7c3c4;
   border-radius: 30px;
   margin-bottom: 7%;
 }
-/* line 1291, ../sass/screen.scss */
+/* line 1292, ../sass/screen.scss */
 .share-list:after {
   clear: both;
 }
-/* line 1294, ../sass/screen.scss */
+/* line 1295, ../sass/screen.scss */
 .share-list li {
   display: inline-block;
   margin-left: 10px;
@@ -2010,35 +2231,35 @@ body {
   padding: 7px 15px;
   transition: all 0.5s;
 }
-/* line 1300, ../sass/screen.scss */
+/* line 1301, ../sass/screen.scss */
 .share-list li:hover {
   color: #ffac55;
   cursor: pointer;
 }
-/* line 1304, ../sass/screen.scss */
+/* line 1305, ../sass/screen.scss */
 .share-list li .social-links {
   color: inherit;
   text-decoration: none;
 }
-/* line 1309, ../sass/screen.scss */
+/* line 1310, ../sass/screen.scss */
 .share-list .share-it-link {
   background-color: #ffac55;
   border: 1px solid #ffac55;
   border-radius: 50%;
   color: #ffffff;
 }
-/* line 1314, ../sass/screen.scss */
+/* line 1315, ../sass/screen.scss */
 .share-list .share-it-link:hover {
   background-color: #ffffff;
 }
 
-/* line 1319, ../sass/screen.scss */
+/* line 1320, ../sass/screen.scss */
 .hover-share {
   display: none;
   transition: all 0.5s;
 }
 
-/* line 1323, ../sass/screen.scss */
+/* line 1324, ../sass/screen.scss */
 .show-share {
   margin-right: 15px;
   padding: 7px 15px;
@@ -2047,7 +2268,7 @@ body {
   color: #222222;
   text-transform: uppercase;
 }
-/* line 1330, ../sass/screen.scss */
+/* line 1331, ../sass/screen.scss */
 .show-share .dating {
   display: inline-block;
   border-right: 1px solid #dbe4e4;
@@ -2058,11 +2279,11 @@ body {
   cursor: pointer;
   transition: all 0.5s;
 }
-/* line 1339, ../sass/screen.scss */
+/* line 1340, ../sass/screen.scss */
 .show-share .dating:hover {
   color: #ffac55;
 }
-/* line 1343, ../sass/screen.scss */
+/* line 1344, ../sass/screen.scss */
 .show-share .alt {
   color: inherit;
   padding: 15px;
@@ -2070,18 +2291,18 @@ body {
   border: 1px solid #dbe4e4;
   text-decoration: none;
 }
-/* line 1349, ../sass/screen.scss */
+/* line 1350, ../sass/screen.scss */
 .show-share .alt:hover {
   color: #ffac55;
 }
 
-/* line 1354, ../sass/screen.scss */
+/* line 1355, ../sass/screen.scss */
 .sound {
   margin: 3% 0;
   border: none;
 }
 
-/* line 1361, ../sass/screen.scss */
+/* line 1362, ../sass/screen.scss */
 .quote-paragraph {
   position: relative;
   background-color: #03b6e7;
@@ -2090,7 +2311,7 @@ body {
   color: #ffffff;
   font: 400 15px/28px "Domine";
 }
-/* line 1368, ../sass/screen.scss */
+/* line 1369, ../sass/screen.scss */
 .quote-paragraph:before {
   position: absolute;
   left: 50px;
@@ -2099,7 +2320,7 @@ body {
   text-transform: uppercase;
   content: open-quote;
 }
-/* line 1376, ../sass/screen.scss */
+/* line 1377, ../sass/screen.scss */
 .quote-paragraph:after {
   position: absolute;
   bottom: 20px;
@@ -2110,30 +2331,30 @@ body {
   content: close-quote;
 }
 
-/* line 1386, ../sass/screen.scss */
+/* line 1387, ../sass/screen.scss */
 .paging-wrap {
   color: #222222;
   font: 400 14px/28px "Montserrat";
   text-transform: uppercase;
 }
-/* line 1390, ../sass/screen.scss */
+/* line 1391, ../sass/screen.scss */
 .paging-wrap li {
   display: inline-block;
   border-right: 1px solid #dbe4e4;
   margin: 5% 0;
   padding: 0 15px;
 }
-/* line 1395, ../sass/screen.scss */
+/* line 1396, ../sass/screen.scss */
 .paging-wrap li:last-child {
   border: none;
 }
-/* line 1398, ../sass/screen.scss */
+/* line 1399, ../sass/screen.scss */
 .paging-wrap li a {
   color: inherit;
   text-decoration: none;
 }
 
-/* line 1404, ../sass/screen.scss */
+/* line 1405, ../sass/screen.scss */
 .arrow-wrap-left {
   background-color: #16d428;
   color: #ffffff;
@@ -2143,13 +2364,13 @@ body {
   margin-right: 10px;
   transition: all 0.5s;
 }
-/* line 1412, ../sass/screen.scss */
+/* line 1413, ../sass/screen.scss */
 .arrow-wrap-left:hover {
   background-color: #ffffff;
   color: #16d428;
 }
 
-/* line 1417, ../sass/screen.scss */
+/* line 1418, ../sass/screen.scss */
 .arrow-wrap-right {
   background-color: #ffac55;
   color: #ffffff;
@@ -2159,29 +2380,29 @@ body {
   margin-left: 10px;
   transition: all 0.5s;
 }
-/* line 1425, ../sass/screen.scss */
+/* line 1426, ../sass/screen.scss */
 .arrow-wrap-right:hover {
   background-color: #ffffff;
   color: #16d428;
 }
 
 @media screen and (min-width: 767px) {
-  /* line 1437, ../sass/screen.scss */
+  /* line 1438, ../sass/screen.scss */
   #footer-section .footer-article-header {
     font: 700 .89rem/1.5rem Montserrat;
   }
-  /* line 1439, ../sass/screen.scss */
+  /* line 1440, ../sass/screen.scss */
   #footer-section .footer-article-header .news-letter-paragraph {
     color: #838b8c;
     font: 400 1rem/1.2rem Domine;
   }
-  /* line 1444, ../sass/screen.scss */
+  /* line 1445, ../sass/screen.scss */
   #footer-section .some-link {
     margin: 3% 0;
     font: 400 .8rem/1.2rem Montserrat;
   }
 
-  /* line 1452, ../sass/screen.scss */
+  /* line 1453, ../sass/screen.scss */
   #contacts-section .contacts-list .contact-holder .contact-wrapper {
     color: #343a3b;
     font: 700 .85rem/1.5rem Montserrat;
@@ -2191,71 +2412,71 @@ body {
     border: 1px solid #838b8c;
     letter-spacing: -.06rem;
   }
-  /* line 1460, ../sass/screen.scss */
+  /* line 1461, ../sass/screen.scss */
   #contacts-section .contacts-list .contact-holder .contact-wrapper .contact {
     display: block;
     color: #343a3b;
     font: 400 1rem/1.5rem Domine;
   }
-  /* line 1468, ../sass/screen.scss */
+  /* line 1469, ../sass/screen.scss */
   #contacts-section .mail {
     background: url("../img/contacts/icon-email.png") 5% 50%/15% no-repeat;
   }
-  /* line 1471, ../sass/screen.scss */
+  /* line 1472, ../sass/screen.scss */
   #contacts-section .call {
     background: url("../img/contacts/icon-call.png") 5% 50%/15% no-repeat;
   }
-  /* line 1474, ../sass/screen.scss */
+  /* line 1475, ../sass/screen.scss */
   #contacts-section .career {
     background: url("../img/contacts/icon-career.png") 5% 50%/15% no-repeat;
   }
 
-  /* line 1481, ../sass/screen.scss */
+  /* line 1482, ../sass/screen.scss */
   #navigator .a-navbar {
     font: 400 .6rem/1.5rem Montserrat;
   }
 
-  /* line 1486, ../sass/screen.scss */
+  /* line 1487, ../sass/screen.scss */
   #the-header .header-contacts {
     font: 400 .8571rem/2rem Montserrat;
   }
 
-  /* line 1492, ../sass/screen.scss */
+  /* line 1493, ../sass/screen.scss */
   .menu-holder .header-menu-section .menu-header {
     font: 400 .55rem/1.3rem Montserrat;
     text-align: center;
   }
-  /* line 1497, ../sass/screen.scss */
+  /* line 1498, ../sass/screen.scss */
   .menu-holder .header-menu-section .navigation-menu .industry-link {
     font: 400 .5rem/1.7rem Montserrat;
   }
-  /* line 1500, ../sass/screen.scss */
+  /* line 1501, ../sass/screen.scss */
   .menu-holder .header-menu-section .navigation-menu .industry-link .for-menu-ico {
     padding-right: 5%;
   }
-  /* line 1504, ../sass/screen.scss */
+  /* line 1505, ../sass/screen.scss */
   .menu-holder .header-menu-section .navigation-menu .menu-without-ico {
     padding: 15%;
   }
-  /* line 1506, ../sass/screen.scss */
+  /* line 1507, ../sass/screen.scss */
   .menu-holder .header-menu-section .navigation-menu .menu-without-ico .view-more {
     font: 400 .5rem/1.7rem Montserrat;
   }
 
-  /* line 1513, ../sass/screen.scss */
+  /* line 1514, ../sass/screen.scss */
   #about-section {
     padding: 5% 0;
   }
-  /* line 1516, ../sass/screen.scss */
+  /* line 1517, ../sass/screen.scss */
   #about-section .about-article .link-holder {
     text-align: right;
     padding: 0;
   }
-  /* line 1521, ../sass/screen.scss */
+  /* line 1522, ../sass/screen.scss */
   #about-section .about-img-holder {
     position: relative;
   }
-  /* line 1523, ../sass/screen.scss */
+  /* line 1524, ../sass/screen.scss */
   #about-section .about-img-holder .badge-holder {
     text-align: center;
     color: #ffffff;
@@ -2268,7 +2489,7 @@ body {
     padding: 18px;
     width: 50%;
   }
-  /* line 1534, ../sass/screen.scss */
+  /* line 1535, ../sass/screen.scss */
   #about-section .about-img-holder .badge-holder .years-of-excellence {
     background: url("../img/badge-icon.png") center 0/70% no-repeat;
     border: 1px solid #ffffff;
@@ -2276,40 +2497,40 @@ body {
     font: 400 .9rem/1.3rem Montserrat;
     padding: 90% 1% 5%;
   }
-  /* line 1540, ../sass/screen.scss */
+  /* line 1541, ../sass/screen.scss */
   #about-section .about-img-holder .badge-holder .years-of-excellence span {
     font: 400 3rem/3rem Montserrat;
     display: block;
   }
 
-  /* line 1548, ../sass/screen.scss */
+  /* line 1549, ../sass/screen.scss */
   #projects-section {
     padding: 7% 0;
   }
-  /* line 1551, ../sass/screen.scss */
+  /* line 1552, ../sass/screen.scss */
   #projects-section .projects .projects-list {
     font-size: 0;
   }
-  /* line 1553, ../sass/screen.scss */
+  /* line 1554, ../sass/screen.scss */
   #projects-section .projects .projects-list li {
     font-size: 14px;
     margin: 15px 0;
   }
-  /* line 1557, ../sass/screen.scss */
+  /* line 1558, ../sass/screen.scss */
   #projects-section .projects .projects-list .project-holder {
     overflow: hidden;
     position: relative;
   }
-  /* line 1560, ../sass/screen.scss */
+  /* line 1561, ../sass/screen.scss */
   #projects-section .projects .projects-list .project-holder:hover .overlay-project {
     display: block;
   }
-  /* line 1563, ../sass/screen.scss */
+  /* line 1564, ../sass/screen.scss */
   #projects-section .projects .projects-list .project-holder:hover .cross-holder {
     background-color: #cc8a44;
     z-index: 999;
   }
-  /* line 1570, ../sass/screen.scss */
+  /* line 1571, ../sass/screen.scss */
   #projects-section .projects .projects-list .project-holder .tag-span {
     position: absolute;
     top: 5%;
@@ -2320,7 +2541,7 @@ body {
     font: 400 .9rem/1.1rem Montserrat;
     color: #ffffff;
   }
-  /* line 1580, ../sass/screen.scss */
+  /* line 1581, ../sass/screen.scss */
   #projects-section .projects .projects-list .project-holder .cross-holder {
     position: absolute;
     bottom: -20px;
@@ -2336,7 +2557,7 @@ body {
     -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
   }
-  /* line 1594, ../sass/screen.scss */
+  /* line 1595, ../sass/screen.scss */
   #projects-section .projects .projects-list .project-holder .cross-holder a {
     color: #ffffff;
     text-decoration: none;
@@ -2346,7 +2567,7 @@ body {
     transform: rotate(-45deg);
   }
 
-  /* line 1607, ../sass/screen.scss */
+  /* line 1608, ../sass/screen.scss */
   .overlay-project {
     overflow: hidden;
     display: none;
@@ -2360,7 +2581,7 @@ body {
     z-index: 99;
     color: #16d428;
   }
-  /* line 1619, ../sass/screen.scss */
+  /* line 1620, ../sass/screen.scss */
   .overlay-project .overlay-text {
     position: absolute;
     top: 50%;
@@ -2371,56 +2592,56 @@ body {
     -ms-transform: translateY(-50%);
     /* IE 9 */
   }
-  /* line 1627, ../sass/screen.scss */
+  /* line 1628, ../sass/screen.scss */
   .overlay-project .overlay-header {
     text-align: center;
     font: 700 1.1rem/1.5rem Montserrat;
   }
-  /* line 1630, ../sass/screen.scss */
+  /* line 1631, ../sass/screen.scss */
   .projects-list li:nth-child(2) .overlay-project .overlay-header {
     font: 700 0.7rem/1rem Montserrat;
   }
-  /* line 1633, ../sass/screen.scss */
+  /* line 1634, ../sass/screen.scss */
   .projects-list li:nth-child(3) .overlay-project .overlay-header {
     font: 700 0.7rem/1rem Montserrat;
   }
-  /* line 1636, ../sass/screen.scss */
+  /* line 1637, ../sass/screen.scss */
   .overlay-project .overlay-header a {
     color: #ffffff;
     text-decoration: none;
   }
-  /* line 1641, ../sass/screen.scss */
+  /* line 1642, ../sass/screen.scss */
   .overlay-project .overlay-paragraph {
     font: 400 .8rem/1.1rem Domine;
     color: #ffffff;
   }
-  /* line 1644, ../sass/screen.scss */
+  /* line 1645, ../sass/screen.scss */
   .projects-list li:nth-child(2) .overlay-project .overlay-paragraph {
     font: 400 .6rem/1.1rem Domine;
   }
-  /* line 1647, ../sass/screen.scss */
+  /* line 1648, ../sass/screen.scss */
   .projects-list li:nth-child(3) .overlay-project .overlay-paragraph {
     font: 400 .6rem/1.1rem Domine;
   }
 
-  /* line 1653, ../sass/screen.scss */
+  /* line 1654, ../sass/screen.scss */
   #clients .slides-list {
     font: 400 1rem/1.5rem Domine;
   }
-  /* line 1659, ../sass/screen.scss */
+  /* line 1660, ../sass/screen.scss */
   #clients .first-indicator-list .photo-indicator .client-text {
     margin: 10% 0;
   }
-  /* line 1662, ../sass/screen.scss */
+  /* line 1663, ../sass/screen.scss */
   #clients .first-indicator-list .photo-indicator .client-name {
     margin: 0;
     font: 700 1rem/1.6rem Montserrat;
   }
-  /* line 1666, ../sass/screen.scss */
+  /* line 1667, ../sass/screen.scss */
   #clients .first-indicator-list .photo-indicator .client-specialization {
     font: 400 1rem/1.6rem Domine;
   }
-  /* line 1672, ../sass/screen.scss */
+  /* line 1673, ../sass/screen.scss */
   #clients .second-indicator-list .ico-holder {
     height: 15px;
     margin-right: 6px;
@@ -2428,51 +2649,51 @@ body {
     width: 15px;
   }
 
-  /* line 1680, ../sass/screen.scss */
+  /* line 1681, ../sass/screen.scss */
   #blog-section {
     padding: 5% 0;
     background: #e7eff1 url("../img/blog/blog-bg.png") 100% 0/50% 100% no-repeat;
   }
-  /* line 1683, ../sass/screen.scss */
+  /* line 1684, ../sass/screen.scss */
   #blog-section .blog-link-holder {
     font: 400 .8rem/1.5rem Montserrat;
     padding: 5% 0;
     margin: 2% 0;
   }
-  /* line 1688, ../sass/screen.scss */
+  /* line 1689, ../sass/screen.scss */
   #blog-section .blog-article-header {
     font: 400 1rem/1.3rem Domine;
   }
-  /* line 1690, ../sass/screen.scss */
+  /* line 1691, ../sass/screen.scss */
   #blog-section .blog-article-header .making-block {
     display: block;
     font: 700 1.1rem/1.5rem Montserrat;
   }
-  /* line 1695, ../sass/screen.scss */
+  /* line 1696, ../sass/screen.scss */
   #blog-section .blog-article-paragraph {
     margin: 5% 0 5%;
     font: 400 1rem/1.3rem Domine;
   }
 
-  /* line 1703, ../sass/screen.scss */
+  /* line 1704, ../sass/screen.scss */
   .active-article .unordered-list {
     margin-left: 10%;
   }
-  /* line 1706, ../sass/screen.scss */
+  /* line 1707, ../sass/screen.scss */
   .active-article .share-list {
     float: right;
   }
 
-  /* line 1713, ../sass/screen.scss */
+  /* line 1714, ../sass/screen.scss */
   .active-article-header .header-content .header-span {
     font: 700 .9rem/1.7rem 'Montserat';
   }
-  /* line 1717, ../sass/screen.scss */
+  /* line 1718, ../sass/screen.scss */
   .active-article-header .header-content .date a {
     font: 400 .9rem/1.7rem 'Montserat';
   }
 
-  /* line 1728, ../sass/screen.scss */
+  /* line 1729, ../sass/screen.scss */
   .managers-list .manager-item .managers-social-item {
     margin-top: 5%;
     text-transform: uppercase;
@@ -2480,84 +2701,84 @@ body {
     padding: 0;
     text-align: center;
   }
-  /* line 1734, ../sass/screen.scss */
+  /* line 1735, ../sass/screen.scss */
   .managers-list .manager-item .managers-social-item a {
     color: inherit;
     text-decoration: none;
     transition: all 0.5s;
   }
-  /* line 1738, ../sass/screen.scss */
+  /* line 1739, ../sass/screen.scss */
   .managers-list .manager-item .managers-social-item a:hover {
     color: #03b6e7;
   }
-  /* line 1743, ../sass/screen.scss */
+  /* line 1744, ../sass/screen.scss */
   .managers-list .manager-item .facebook {
     color: #3b5998;
   }
-  /* line 1746, ../sass/screen.scss */
+  /* line 1747, ../sass/screen.scss */
   .managers-list .manager-item .twitter {
     color: #50abf1;
   }
-  /* line 1748, ../sass/screen.scss */
+  /* line 1749, ../sass/screen.scss */
   .managers-list .manager-item .twitter a:hover {
     color: #ffac55;
   }
-  /* line 1752, ../sass/screen.scss */
+  /* line 1753, ../sass/screen.scss */
   .managers-list .manager-item .google {
     color: #dc4b3f;
   }
 }
 @media screen and (min-width: 991px) {
-  /* line 1760, ../sass/screen.scss */
+  /* line 1761, ../sass/screen.scss */
   .slider-background {
     height: 100vh;
   }
 
-  /* line 1764, ../sass/screen.scss */
+  /* line 1765, ../sass/screen.scss */
   #the-header .header-contacts {
     font: 400 1rem/2rem Montserrat;
   }
 
-  /* line 1769, ../sass/screen.scss */
+  /* line 1770, ../sass/screen.scss */
   #navigator .a-navbar {
     font: 400 1rem/1.5rem Montserrat;
   }
 
-  /* line 1775, ../sass/screen.scss */
+  /* line 1776, ../sass/screen.scss */
   .menu-holder .header-menu-section .menu-header {
     font: 400 .9rem/1.8rem Montserrat;
   }
-  /* line 1779, ../sass/screen.scss */
+  /* line 1780, ../sass/screen.scss */
   .menu-holder .header-menu-section .navigation-menu .industry-link {
     font: 400 .8rem/1.5rem Montserrat;
   }
-  /* line 1781, ../sass/screen.scss */
+  /* line 1782, ../sass/screen.scss */
   .menu-holder .header-menu-section .navigation-menu .industry-link .for-menu-ico {
     padding-right: 10%;
   }
-  /* line 1785, ../sass/screen.scss */
+  /* line 1786, ../sass/screen.scss */
   .menu-holder .header-menu-section .navigation-menu .menu-without-ico {
     padding: 15%;
   }
-  /* line 1787, ../sass/screen.scss */
+  /* line 1788, ../sass/screen.scss */
   .menu-holder .header-menu-section .navigation-menu .menu-without-ico .view-more {
     font: 400 .8rem/1.5rem Montserrat;
   }
 
-  /* line 1794, ../sass/screen.scss */
+  /* line 1795, ../sass/screen.scss */
   #about-section {
     padding: 5% 0;
   }
-  /* line 1797, ../sass/screen.scss */
+  /* line 1798, ../sass/screen.scss */
   #about-section .about-article .link-holder {
     text-align: right;
     padding: 0;
   }
-  /* line 1802, ../sass/screen.scss */
+  /* line 1803, ../sass/screen.scss */
   #about-section .about-img-holder {
     position: relative;
   }
-  /* line 1804, ../sass/screen.scss */
+  /* line 1805, ../sass/screen.scss */
   #about-section .about-img-holder .badge-holder {
     text-align: center;
     color: #ffffff;
@@ -2570,7 +2791,7 @@ body {
     padding: 18px;
     width: 50%;
   }
-  /* line 1815, ../sass/screen.scss */
+  /* line 1816, ../sass/screen.scss */
   #about-section .about-img-holder .badge-holder .years-of-excellence {
     background: url("../img/badge-icon.png") center 0/70% no-repeat;
     border: 1px solid #ffffff;
@@ -2578,40 +2799,40 @@ body {
     font: 400 .9rem/1.3rem Montserrat;
     padding: 70% 1% 5%;
   }
-  /* line 1821, ../sass/screen.scss */
+  /* line 1822, ../sass/screen.scss */
   #about-section .about-img-holder .badge-holder .years-of-excellence span {
     font: 400 3rem/3rem Montserrat;
     display: block;
   }
 
-  /* line 1829, ../sass/screen.scss */
+  /* line 1830, ../sass/screen.scss */
   #projects-section {
     padding: 7% 0;
   }
-  /* line 1832, ../sass/screen.scss */
+  /* line 1833, ../sass/screen.scss */
   #projects-section .projects .projects-list {
     font-size: 0;
   }
-  /* line 1834, ../sass/screen.scss */
+  /* line 1835, ../sass/screen.scss */
   #projects-section .projects .projects-list li {
     font-size: 14px;
     margin: 15px 0;
   }
-  /* line 1838, ../sass/screen.scss */
+  /* line 1839, ../sass/screen.scss */
   #projects-section .projects .projects-list .project-holder {
     overflow: hidden;
     position: relative;
   }
-  /* line 1841, ../sass/screen.scss */
+  /* line 1842, ../sass/screen.scss */
   #projects-section .projects .projects-list .project-holder:hover .overlay-project {
     display: block;
   }
-  /* line 1844, ../sass/screen.scss */
+  /* line 1845, ../sass/screen.scss */
   #projects-section .projects .projects-list .project-holder:hover .cross-holder {
     background-color: #cc8a44;
     z-index: 999;
   }
-  /* line 1851, ../sass/screen.scss */
+  /* line 1852, ../sass/screen.scss */
   #projects-section .projects .projects-list .project-holder .tag-span {
     position: absolute;
     top: 5%;
@@ -2622,7 +2843,7 @@ body {
     font: 400 .9rem/1.1rem Montserrat;
     color: #ffffff;
   }
-  /* line 1861, ../sass/screen.scss */
+  /* line 1862, ../sass/screen.scss */
   #projects-section .projects .projects-list .project-holder .cross-holder {
     position: absolute;
     bottom: -20px;
@@ -2638,7 +2859,7 @@ body {
     -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
   }
-  /* line 1875, ../sass/screen.scss */
+  /* line 1876, ../sass/screen.scss */
   #projects-section .projects .projects-list .project-holder .cross-holder a {
     color: #ffffff;
     text-decoration: none;
@@ -2648,57 +2869,57 @@ body {
     transform: rotate(-45deg);
   }
 
-  /* line 1889, ../sass/screen.scss */
+  /* line 1890, ../sass/screen.scss */
   .overlay-project .overlay-header {
     font: 700 1.3rem/1.9rem Montserrat;
   }
-  /* line 1891, ../sass/screen.scss */
+  /* line 1892, ../sass/screen.scss */
   .projects-list li:nth-child(2) .overlay-project .overlay-header {
     font: 700 1rem/1.4rem Montserrat;
   }
-  /* line 1894, ../sass/screen.scss */
+  /* line 1895, ../sass/screen.scss */
   .projects-list li:nth-child(3) .overlay-project .overlay-header {
     font: 700 1rem/1.4rem Montserrat;
   }
-  /* line 1898, ../sass/screen.scss */
+  /* line 1899, ../sass/screen.scss */
   .overlay-project .overlay-paragraph {
     font: 400 1rem/1.5rem Domine;
   }
-  /* line 1900, ../sass/screen.scss */
+  /* line 1901, ../sass/screen.scss */
   .projects-list li:nth-child(2) .overlay-project .overlay-paragraph {
     font: 400 .8rem/1.3rem Domine;
   }
-  /* line 1903, ../sass/screen.scss */
+  /* line 1904, ../sass/screen.scss */
   .projects-list li:nth-child(3) .overlay-project .overlay-paragraph {
     font: 400 .8rem/1.3rem Domine;
   }
 
-  /* line 1909, ../sass/screen.scss */
+  /* line 1910, ../sass/screen.scss */
   #clients .slides-list {
     font: 400 1rem/1.5rem Domine;
   }
-  /* line 1913, ../sass/screen.scss */
+  /* line 1914, ../sass/screen.scss */
   #clients .first-indicator-list .photo-indicator {
     float: left;
   }
-  /* line 1914, ../sass/screen.scss */
+  /* line 1915, ../sass/screen.scss */
   #clients .first-indicator-list .photo-indicator .img-indicator {
     margin: 0 2% 0;
   }
-  /* line 1918, ../sass/screen.scss */
+  /* line 1919, ../sass/screen.scss */
   #clients .first-indicator-list .photo-indicator .client-text {
     margin: 10% 0;
   }
-  /* line 1921, ../sass/screen.scss */
+  /* line 1922, ../sass/screen.scss */
   #clients .first-indicator-list .photo-indicator .client-name {
     margin: 0;
     font: 700 .8rem/1.4rem Montserrat;
   }
-  /* line 1925, ../sass/screen.scss */
+  /* line 1926, ../sass/screen.scss */
   #clients .first-indicator-list .photo-indicator .client-specialization {
     font: 400 .8rem/1.4rem Domine;
   }
-  /* line 1932, ../sass/screen.scss */
+  /* line 1933, ../sass/screen.scss */
   #clients .second-indicator-list .ico-holder {
     margin-top: 25%;
     height: 15px;
@@ -2707,12 +2928,12 @@ body {
     width: 15px;
   }
 
-  /* line 1941, ../sass/screen.scss */
+  /* line 1942, ../sass/screen.scss */
   #blog-section {
     padding: 5% 0;
     background: #e7eff1 url("../img/blog/blog-bg.png") 100% 0/50% 100% no-repeat;
   }
-  /* line 1944, ../sass/screen.scss */
+  /* line 1945, ../sass/screen.scss */
   #blog-section .blog-link-holder {
     float: right;
     width: 50%;
@@ -2720,43 +2941,43 @@ body {
     padding: 0;
     margin: 0 0 2% 0;
   }
-  /* line 1951, ../sass/screen.scss */
+  /* line 1952, ../sass/screen.scss */
   #blog-section .blog-article-header {
     font: 400 1.2rem/1.5rem Domine;
   }
-  /* line 1954, ../sass/screen.scss */
+  /* line 1955, ../sass/screen.scss */
   #blog-section .blog-article-header .making-block {
     display: block;
     font: 700 1.3rem/1.7rem Montserrat;
   }
-  /* line 1959, ../sass/screen.scss */
+  /* line 1960, ../sass/screen.scss */
   #blog-section .blog-article-paragraph {
     margin: 3% 0 5%;
     font: 400 1.2rem/1.5rem Domine;
   }
 
-  /* line 1965, ../sass/screen.scss */
+  /* line 1966, ../sass/screen.scss */
   #footer-section .some-links-list {
     margin-top: 35%;
   }
 
-  /* line 1970, ../sass/screen.scss */
+  /* line 1971, ../sass/screen.scss */
   #footer-section .footer-article-header {
     font: 700 1.4rem/2rem Montserrat;
   }
-  /* line 1972, ../sass/screen.scss */
+  /* line 1973, ../sass/screen.scss */
   #footer-section .footer-article-header .news-letter-paragraph {
     color: #838b8c;
     font: 400 1.1rem/1.5rem Domine;
   }
-  /* line 1977, ../sass/screen.scss */
+  /* line 1978, ../sass/screen.scss */
   #footer-section .some-link {
     margin: 3% 0;
     font: 400 1rem/1.6rem Montserrat;
     letter-spacing: -.06rem;
   }
 
-  /* line 1986, ../sass/screen.scss */
+  /* line 1987, ../sass/screen.scss */
   #contacts-section .contacts-list .contact-holder .contact-wrapper {
     color: #343a3b;
     font: 700 1.2rem/1.5rem Montserrat;
@@ -2764,68 +2985,68 @@ body {
     border: 1px solid #838b8c;
     letter-spacing: -.06rem;
   }
-  /* line 1992, ../sass/screen.scss */
+  /* line 1993, ../sass/screen.scss */
   #contacts-section .contacts-list .contact-holder .contact-wrapper .contact {
     display: block;
     color: #343a3b;
     font: 400 1rem/1.5rem Domine;
   }
-  /* line 2000, ../sass/screen.scss */
+  /* line 2001, ../sass/screen.scss */
   #contacts-section .mail {
     background: url("../img/contacts/icon-email.png") 10% 50%/auto no-repeat;
   }
-  /* line 2003, ../sass/screen.scss */
+  /* line 2004, ../sass/screen.scss */
   #contacts-section .call {
     background: url("../img/contacts/icon-call.png") 10% 50%/auto no-repeat;
   }
-  /* line 2006, ../sass/screen.scss */
+  /* line 2007, ../sass/screen.scss */
   #contacts-section .career {
     background: url("../img/contacts/icon-career.png") 10% 50%/auto no-repeat;
   }
 
-  /* line 2013, ../sass/screen.scss */
+  /* line 2014, ../sass/screen.scss */
   .active-article .illustration-paragraph {
     padding-top: 2%;
     padding-bottom: 5%;
   }
 
-  /* line 2021, ../sass/screen.scss */
+  /* line 2022, ../sass/screen.scss */
   .active-article-header .header-content .header-span {
     font: 700 1rem/2rem 'Montserat';
   }
-  /* line 2025, ../sass/screen.scss */
+  /* line 2026, ../sass/screen.scss */
   .active-article-header .header-content .date a {
     font: 400 1rem/2rem 'Montserat';
   }
 
-  /* line 2035, ../sass/screen.scss */
+  /* line 2036, ../sass/screen.scss */
   .what-we-do {
     position: relative;
   }
 
-  /* line 2038, ../sass/screen.scss */
+  /* line 2039, ../sass/screen.scss */
   .excellence-wrapper {
     position: absolute;
     right: 15px;
     top: 90px;
   }
-  /* line 2042, ../sass/screen.scss */
+  /* line 2043, ../sass/screen.scss */
   .excellence-wrapper .reward {
     background: url("../img/badge-icon.png") center 0/60% no-repeat;
     padding: 50% 1% 5%;
   }
-  /* line 2045, ../sass/screen.scss */
+  /* line 2046, ../sass/screen.scss */
   .excellence-wrapper .reward span {
     font: 400 .8rem/.9rem Montserrat;
     display: block;
   }
-  /* line 2050, ../sass/screen.scss */
+  /* line 2051, ../sass/screen.scss */
   .excellence-wrapper .happy-clients {
     margin: 40px 0;
     text-transform: uppercase;
     font: 400 3rem/3rem Montserrat;
   }
-  /* line 2054, ../sass/screen.scss */
+  /* line 2055, ../sass/screen.scss */
   .excellence-wrapper .happy-clients span {
     margin-top: 10px;
     font: 400 .8rem/.9rem Montserrat;
@@ -2833,62 +3054,62 @@ body {
   }
 }
 @media screen and (min-width: 1199px) {
-  /* line 2065, ../sass/screen.scss */
+  /* line 2066, ../sass/screen.scss */
   #about-section .about-img-holder .badge-holder {
     bottom: -80%;
   }
 
-  /* line 2071, ../sass/screen.scss */
+  /* line 2072, ../sass/screen.scss */
   .overlay-project .overlay-header {
     font: 700 1.6rem/2.1rem Montserrat;
   }
-  /* line 2073, ../sass/screen.scss */
+  /* line 2074, ../sass/screen.scss */
   .projects-list li:nth-child(2) .overlay-project .overlay-header {
     font: 700 1.3rem/1.8rem Montserrat;
   }
-  /* line 2076, ../sass/screen.scss */
+  /* line 2077, ../sass/screen.scss */
   .projects-list li:nth-child(3) .overlay-project .overlay-header {
     font: 700 1.3rem/1.8rem Montserrat;
   }
-  /* line 2080, ../sass/screen.scss */
+  /* line 2081, ../sass/screen.scss */
   .overlay-project .overlay-paragraph {
     font: 400 1.3rem/1.8rem Domine;
   }
-  /* line 2082, ../sass/screen.scss */
+  /* line 2083, ../sass/screen.scss */
   .projects-list li:nth-child(2) .overlay-project .overlay-paragraph {
     font: 400 1.1rem/1.6rem Domine;
   }
-  /* line 2085, ../sass/screen.scss */
+  /* line 2086, ../sass/screen.scss */
   .projects-list li:nth-child(3) .overlay-project .overlay-paragraph {
     font: 400 1.1rem/1.6rem Domine;
   }
 
-  /* line 2091, ../sass/screen.scss */
+  /* line 2092, ../sass/screen.scss */
   #clients .slides-list {
     font: 400 1.2rem/1.7rem Domine;
   }
-  /* line 2095, ../sass/screen.scss */
+  /* line 2096, ../sass/screen.scss */
   #clients .first-indicator-list .photo-indicator {
     float: left;
   }
-  /* line 2096, ../sass/screen.scss */
+  /* line 2097, ../sass/screen.scss */
   #clients .first-indicator-list .photo-indicator .img-indicator {
     margin: 0 3% 0;
   }
-  /* line 2100, ../sass/screen.scss */
+  /* line 2101, ../sass/screen.scss */
   #clients .first-indicator-list .photo-indicator .client-text {
     margin: 10% 0;
   }
-  /* line 2103, ../sass/screen.scss */
+  /* line 2104, ../sass/screen.scss */
   #clients .first-indicator-list .photo-indicator .client-name {
     margin: 0;
     font: 700 1.1rem/1.6rem Montserrat;
   }
-  /* line 2107, ../sass/screen.scss */
+  /* line 2108, ../sass/screen.scss */
   #clients .first-indicator-list .photo-indicator .client-specialization {
     font: 400 1.1rem/1.6rem Domine;
   }
-  /* line 2113, ../sass/screen.scss */
+  /* line 2114, ../sass/screen.scss */
   #clients .second-indicator-list .ico-holder {
     height: 15px;
     margin-right: 6px;
@@ -2896,11 +3117,11 @@ body {
     width: 15px;
   }
 
-  /* line 2126, ../sass/screen.scss */
+  /* line 2127, ../sass/screen.scss */
   .active-article-header .header-content .header-span {
     font: 700 1rem/2rem 'Montserat';
   }
-  /* line 2130, ../sass/screen.scss */
+  /* line 2131, ../sass/screen.scss */
   .active-article-header .header-content .date a {
     font: 400 1rem/2rem 'Montserat';
   }

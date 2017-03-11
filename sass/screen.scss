@@ -7,6 +7,7 @@
 @import "heading-paragraph";
 @import "team";
 @import "faq";
+@import "industry";
 
 $orange: #ffac55;
 $white: #ffffff;
@@ -80,7 +81,7 @@ body{
   }
   .nav-button{
     margin-top: 40px;
-    background-color: white;/*Ты же везде НЕХ используешь. Так и везде используй. */
+    background-color: $white;/*Ты же везде НЕХ используешь. Так и везде используй. */
   }
   .custom-navbar-collapse{
     border: none;
